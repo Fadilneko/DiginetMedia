@@ -1,0 +1,50 @@
+<!-- <mat-card>
+    <div>
+        <div class="add-button">
+          <mat-form-field class="search-container" appearance="outline">
+            <mat-icon matPrefix>search</mat-icon>
+            <input matInput (keyup)="applyFilter($event)" placeholder="Pencarian">
+          </mat-form-field>
+    
+          <button mat-button class="btn-tambah" (click)="openDialog(false)">
+            Tambah
+          </button>
+        </div>
+      
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    
+          <ng-container matColumnDef="no">
+            <th mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">No</th>
+            <td mat-cell *matCellDef="let element">{{element.no}}</td>
+          </ng-container>
+    
+          <ng-container matColumnDef="judul">
+            <th mat-header-cell *matHeaderCellDef> Judul </th>
+            <td mat-cell *matCellDef="let fitur">{{ fitur.judul }}</td>
+          </ng-container>
+      
+          <ng-container matColumnDef="deskripsi">
+            <th mat-header-cell *matHeaderCellDef> Deskripsi </th>
+            <td mat-cell *matCellDef="let fitur">{{ fitur.deskripsi }}</td>
+          </ng-container>
+      
+         <ng-container matColumnDef="aksi">
+              <th mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">Aksi</th>
+              <td mat-cell *matCellDef="let fitur; let i = index">
+                <button mat-icon-button color="primary" class="btn-edit" (click)="openDialog(true, fitur)"><mat-icon class="edit-button">edit</mat-icon></button>
+                <button mat-icon-button color="warn" class="btn-delete" (click)="removeFitur(i)" ><mat-icon class="delete-button" >delete</mat-icon></button>
+           
+              </td>
+            </ng-container>
+      
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      
+        <mat-paginator [length]="dataSource.data.length"
+                       [pageSize]="pageSize"
+                       [pageSizeOptions]="[5, 10, 20]"
+                       (page)="onPageChange($event)">
+        </mat-paginator>
+      </div>
+</mat-card> -->

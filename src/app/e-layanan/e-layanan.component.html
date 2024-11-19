@@ -1,0 +1,137 @@
+<mat-card class="container">
+
+    <mat-card-content class="content">
+
+        <div class="display0">
+            <div class="column0">
+
+            <h1>E-Layanan Kepegawaian</h1>
+            <p>Platform digital yang dirancang untuk mengelola berbagai aspek administrasi kepegawaian di sebuah organisasi, terutama di sektor publik atau pemerintahan. 
+                Platform ini membantu meningkatkan efisiensi dan transparansi dalam pengelolaan data dan proses kepegawaian.</p>
+            </div>
+
+        
+           
+            <img class="absolute0" src="assets/e-layanan.png" width="20%">
+      
+      
+          
+
+        </div>
+        
+       
+        <h2>Keunggulan Produk :</h2>
+        <div class="display">
+
+            <div class="column2">
+              
+                <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> UU HKPD mengeluarkan pengaturan tentang pajak barang dan jasa tertentu (PBJT), dalam mengatur berbagai 
+                    pelaksanaan desentralisasi fiskal dan pemungutan pajak daerah. Pada dasarnya, PBJT merupakan integrasi 5 jenis pajak daerah dalam UU PDRD yang berbasis konsumsi,
+                     yaitu pajak hotel, pajak restoran, pajak hiburan, pajak parkir, dan pajak penerangan jalan. Berdasarkan pada Pasal 1 angka 42 UU HKPD, PBJT adalah pajak yang
+                      dibayarkan oleh konsumen akhir atas konsumsi barang dan/atau jasa tertentu. Barang dan/atau jasa tertentu yang menjadi objek PBJT tersebut meliputi:
+                    A.Jasa Perhotelan 
+                    B.Jasa Makanan/atau Minuman 
+                    C.Jasa Kesenian dan Hiburan 
+                    D.Jasa Parkir 
+                    E.Pajak Air Tanah 
+                    F.Pajak MBLB 
+                    G.Pajak Sarang burung Walet
+                    H.Pajak Reklame
+                    I.BPHTB 
+                    J.Tenaga Listrik
+                    K.PBB
+                  </p>
+          
+                  <h2>Fitur Produk :</h2>
+          
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Profile
+                  </p>
+                  <p class="p0">Menampilkan informasi profile gunungkidul (visi misi, gambaran umum, aksesibiltas dan dinformasi umum profile daerah)</p>
+          
+                  <div class="garis"></div>
+          
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Realisasi Investasi 
+                  </p>
+                  <p class="p0">Informasi realisasi investasi yang dapat dilihat dalam bentuk rekapitulasi data dan grafik setiap tahun dan pertriwulan.</p>
+          
+                  <div class="garis"></div>
+          
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Sarana Prasarana
+                  </p>
+                  <p class="p0">informasi sarana prasarana yang sudah tersedia di daerah.</p>
+          
+                  <div class="garis"></div>
+          
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Panduan Investasi
+                  </p>
+                  <p class="p0">informasi panduan berinvestasi, data ditampilkan dalam bentuk FAQ, regulasi dan SOP.</p>
+          
+                  <div class="garis"></div>
+          
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Peluang Investasi
+                  </p>
+                  <p class="p0">Informasi peluang investasi daerah, informasi ditampilan dalam bentuk titik lokasi dan profile industri yang menjadi peluang investasi beserta contack
+                     person.</p>
+   
+          
+             
+          
+                
+    
+            
+            </div>
+
+        
+          
+      
+
+            
+      
+
+        </div>
+
+    </mat-card-content>
+
+</mat-card>
+
+<mat-card class="container2">
+    <mat-card-content class="content2">
+
+      
+
+        <h1>Tampilan Produk:</h1>
+
+        <div class="slider-container">
+          <button class="prev" (click)="prevSlide()">&#10094;</button>
+          <div #slidesContainer class="slides">
+            <img src="assets/miringkiri.png" class="slide" width="30%">
+            <img src="assets/lap-elayanan.png" class="slide" width="40%" height="200px">
+            <img src="assets/miringkanan.png" class="slide" width="30%">
+
+            <img src="assets/miringkiri.png" class="slide" width="30%">
+            <img src="assets/lap2.png" class="slide" width="40%">
+          
+            
+          </div>
+          <button class="next" (click)="nextSlide()">&#10095;</button>
+        </div>
+      
+      
+    </mat-card-content>
+</mat-card>
+<div class="cta">
+    <div class="cta-content">
+        <img src="assets/cs.png" alt="Customer Support" >
+        <div class="cta-text">
+            <p>Butuh Software Manajemen Untuk Bisnis Anda? Kami siap membantu.</p>
+            <button [routerLink]="['/hubungi-kami']" mat-button>Hubungi Kami</button>
+        </div>
+    </div>
+</div>
+

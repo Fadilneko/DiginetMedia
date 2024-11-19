@@ -1,0 +1,87 @@
+<body>
+    
+
+
+<mat-card class="card">
+
+    <mat-card-content class="content">
+
+        <div class="display">
+        <div class="column">
+        <p>Butuh Solusi Sistem Manajemen </p> 
+        <p> Untuk Bisnis Anda?</p>
+        </div>
+        <button mat-icon-button class="btnx" (click)="onClose()"><mat-icon>close</mat-icon></button>
+        </div>
+
+        <div class="display2">
+
+        <div class="titik"></div>
+        <div class="titik"></div>
+        <div class="titik"></div>
+        <div class="garis"></div>
+
+        </div>
+
+        <p class="p1">Diskusikan Kebutuhan Sistem Manajemen Anda Bersama Tim Marketing Kami.</p>
+        <form class="form1" [formGroup]="form">
+
+        <div class="display3">
+
+            <div class="column1">
+                <p class="text-white">Nama Lengkap</p>
+          
+                <input matInput formControlName="nama_lengkap" />
+          
+            </div>
+
+            <div class="column1">
+                <p class="text-white">Perusahaan/Instansi *</p>
+            
+                <input matInput formControlName="perusahaan_instansi">
+           
+            </div>
+
+        </div>
+
+        <div class="display3">
+
+            <div class="column1">
+                <p class="text-white">Email *</p>
+          
+                <input matInput formControlName="email">
+           
+            </div>
+
+            <div class="column1">
+                <p class="text-white">No. Hp/Whatsapp *</p>
+          
+                <input matInput formControlName="nohp_whatsapp">
+          
+            </div>
+
+        </div>
+
+        <div class="display3">
+
+            <div class="column1">
+                <p class="text-white">Pilih Produk/Solusi *</p>
+          
+                <select >
+                    <option formControlName="produk_solusi" value="1">Pilih Produk</option>
+                    <option formControlName="produk_solusi" value="2">oke</option>
+                </select>
+           
+            </div>
+
+        </div>
+
+    </form>
+
+        <button class="btnkirim" mat-button (click)="openDialog()">Kirim</button>
+
+    </mat-card-content>
+
+</mat-card>
+
+</body>

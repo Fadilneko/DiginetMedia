@@ -1,0 +1,63 @@
+<div class="card p-16 mb-20 ml-11">
+  <div class="search-container flex justify-end">
+    <mat-form-field appearance="outline" class="search-bar w-full max-w-xs">
+      <mat-icon matPrefix>search</mat-icon>
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="searchQuery"
+        placeholder="Search here"
+        (ngModelChange)="onSearchChange()"
+      />
+    </mat-form-field>
+  </div>
+
+  <p class="text-3xl font-medium ml-11">Berita</p>
+
+  <div class="display flex gap-12">
+    <!-- Blog utama -->
+    <div class="blog-container grid grid-cols-auto-fill gap-8 w-4/5">
+      <button mat-button [routerLink]="['/blog', post.id]" class="blog-item h-auto w-auto rounded-lg border border-gray-300 hover:transform hover:translate-y-1 transition-transform duration-200" *ngFor="let post of paginatedBlogPosts">
+        <img mat-card-image [src]="post.image_url" [alt]="post.title" class="w-full" />
+        <div class="kotak px-8">
+          <p class="font-medium mb-4">{{ post.title }}</p>
+          <p class="text-gray-600 text-sm">{{ post.content }}</p>
+          <div class="garis w-full h-0.5 bg-gray-300 my-4"></div>
+          <div class="tahun flex justify-end py-4">
+            <p class="text-xs text-gray-400">{{post.tanggal}}</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- Blog populer -->
+    <div class="berita ml-11 ">
+     
+      <div class="isiberita border-2 border-blue-800 p-6 rounded h-auto">
+        <p class="font-semibold text-lg sm:text-center: ">Berita Terpopuler</p>
+
+        <button [routerLink]="['/blog', blog.id]" class="berita-item text-left" *ngFor="let blog of blogpopuler">
+          <div class="column">
+            <img [src]="blog.image_url" alt=""  />
+            <div class="column1">
+              <p class="font-medium">{{ blog.content }}</p>
+              <div class="flex">
+              <mat-icon class="text-sm">calendar_today</mat-icon><p class="tanggal text-sm ">{{ blog.tanggal }}</p>
+            </div>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paginator -->
+  <div class="column2 flex mt-8 gap-32">
+    <mat-paginator
+      [length]="filteredBlogPosts.length"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="[4, 8, 12]"
+      (page)="onPageChange($event)"
+    ></mat-paginator>
+  </div>
+</div>

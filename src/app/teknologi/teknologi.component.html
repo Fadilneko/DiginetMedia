@@ -1,0 +1,61 @@
+<body>
+    
+
+
+    <header class="profil-header flex items-center px-12" style="background: url('assets/teknologihead.png') no-repeat center center/cover;">
+        <div class="profil-content mt-72 p-40">
+            <h1 class="tittle" *ngIf="headerTeknologi">{{ headerTeknologi.judul }}</h1>
+            <p *ngIf="headerTeknologi">{{ headerTeknologi.deskripsi }}</p>
+        </div>
+    </header>
+    
+    
+    <div class="card flex items-center flex-col">
+        <!-- API Service Section -->
+        <div class="item flex items-center justify-center w-full item-right item-offset-left" *ngIf="apiServiceItem">
+          <img [src]="apiServiceItem.gambar" alt="API Service">
+          <div class="text-container">
+            <h2>{{ apiServiceItem.judul }}</h2>
+            <p>{{ apiServiceItem.deskripsi }}</p>
+          </div>
+        </div>
+      
+        <!-- Mobile Application Section -->
+        <div class="item flex items-center justify-center w-full item-left item-offset" *ngIf="mobileApplicationItem">
+          <img [src]="mobileApplicationItem.gambar" alt="Mobile Application">
+          <div class="text-container">
+            <h2>{{ mobileApplicationItem.judul }}</h2>
+            <p>{{ mobileApplicationItem.deskripsi }}</p>
+          </div>
+        </div>
+    
+            <!-- System Integration Section -->
+    <div class="item flex items-center justify-center w-full item-right item-offset-left" *ngIf="systemIntegrationItem">
+        <img [src]="systemIntegrationItem.gambar" alt="System Integration">
+        <div class="text-container">
+          <h2>{{ systemIntegrationItem.judul }}</h2>
+          <p>{{ systemIntegrationItem.deskripsi }}</p>
+        </div>
+      </div>
+      
+        <!-- Artificial Intelligence Section -->
+        <div class="item flex items-center justify-center w-full item-left item-offset" *ngIf="artificialIntelligenceItem">
+          <img [src]="artificialIntelligenceItem.gambar" alt="Artificial Intelligence">
+          <div class="text-container">
+            <h2>{{ artificialIntelligenceItem.judul }}</h2>
+            <p>{{ artificialIntelligenceItem.deskripsi }}</p>
+          </div>
+        </div>
+      
+        <!-- Dynamic Database Section -->
+        <div class="item flex items-center justify-center w-full item-right item-offset-left" *ngIf="dynamicDatabaseItem">
+          <img [src]="dynamicDatabaseItem.gambar" alt="Dynamic Database">
+          <div class="text-container">
+            <h2>{{ dynamicDatabaseItem.judul }}</h2>
+            <p>{{ dynamicDatabaseItem.deskripsi }}</p>
+          </div>
+        </div>
+      </div>
+    
+    
+    </body>

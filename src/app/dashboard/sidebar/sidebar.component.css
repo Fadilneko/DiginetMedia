@@ -1,0 +1,179 @@
+.sidenav-container {
+  width: 100vh;
+  background: #0044b4;
+  position: fixed;
+  z-index: 10000;
+  color: white;
+  box-shadow: 5px 1px 10px 1px darkblue;
+}
+
+.mainheader {
+  width: 100vh;
+  background: #0044b4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 16px;
+}
+
+.mainheader mat-icon {
+  color: white;
+}
+
+.img1 {
+  width: 80px;
+  height: auto;
+}
+
+.sidenav {
+  position: fixed;
+  width: 250px;
+  height: auto;
+  background: #0044b4;
+  color: white;
+}
+
+mat-toolbar-row .spacer {
+  flex: 1 1 auto;
+}
+
+/* Gaya untuk elemen <a> di dalam sidenav */
+.sidenav button {
+  border: none;
+  box-shadow: none;
+  background-color: #0044b4;
+  box-shadow: none;
+  color: white; /* Warna teks */
+  display: flex;
+  align-items: center; /* Vertikal alignment untuk ikon dan teks */
+
+}
+
+/* Gaya untuk ikon di dalam elemen <a> */
+.sidenav button mat-icon {
+  color: white; /* Warna ikon */
+ 
+}
+
+/* Gaya untuk menu-item dan submenu */
+.menu-item {
+  border: 1px solid #5678ae;
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+  justify-content: space-around;
+}
+
+
+.menu-item1 {
+  margin-top: 8%;
+  margin-bottom: 8%;
+  margin-left: 2%;
+  padding :4%;
+  border: 1px solid #5678ae;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.menu-item1 button {
+  width: 100%;
+}
+
+.menu-item1 .main-menu {
+  padding-left: 7%;
+}
+
+.menu-item2 {
+  margin-left: 2%;
+  padding: 4%;
+  border: 1px solid #5678ae;
+  display: flex;
+  align-items: center;
+
+}
+
+.menu-item2 button {
+  width: 100%;
+}
+
+.menu-item2 .main-menu {
+  padding-left: 7%;
+}
+
+.menu-item3 {
+  margin-left: 2%;
+  padding: 4%;
+  border: 1px solid #5678ae;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item3 button {
+  width: 100%;
+}
+
+.menu-item3 .main-menu {
+  padding-left: 7%;
+}
+
+.main-menu mat-icon {
+  margin-right: 8px;
+}
+
+
+.submenu-toggle {
+  margin-left: 8px;
+}
+
+.sub-menu {
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+  width: 100%;
+
+}
+
+.column {
+  width: 100%;
+}
+
+.sub-menu button {
+  margin-left: 50px;
+  padding: 10px;
+  width: 75%;
+  border: 1px solid #5678ae;
+
+}
+
+.sub-menu .submenu1 {
+  margin-top: 4%;
+  margin-left: 50px;
+  padding: 10px;
+  width: 75%;
+  border: 1px solid #5678ae;
+
+}
+
+.sub-menu button mat-icon {
+  margin-right: 8px;
+}
+
+.sidenav mat-nav-list button.submenu.show {
+  display: flex;
+  align-items: center; /* Vertikal alignment untuk ikon dan teks */
+}
+
+/* Gaya untuk ikon panah */
+.arrow-down {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}

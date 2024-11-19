@@ -1,0 +1,972 @@
+     {
+    "pages": [
+      {
+        "id": 1,
+        "title": "Layanan Informasi Penerangan Jalan Umum",
+        "description": "Layanan Penerangan Jalan Umum yang biasanya disediakan oleh pemerintah daerah atau kota untuk memberikan informasi mengenai kondisi penerangan jalan umum. Layanan ini bertujuan untuk memastikan bahwa jalan-jalan di daerah tersebut memiliki pencahayaan yang memadai untuk keamanan dan kenyamanan pengguna jalan.",
+        "advantages": [
+            
+          {
+            "title": "Pemantauan Real-Time",
+            "description": "Aplikasi ini memungkinkan pemantauan kondisi penerangan jalan umum secara real-time, meningkatkan responsivitas terhadap masalah penerangan."
+          },
+          {
+            "title": "Pelaporan dan Tindak Lanjut Efisien",
+            "description": "Mempermudah masyarakat dalam melaporkan kerusakan atau masalah pada lampu jalan, serta memastikan tindak lanjut yang cepat dan efisien."
+          },
+          {
+            "title": "Transparansi dan Akuntabilitas",
+            "description": "Meningkatkan transparansi dalam pengelolaan penerangan jalan umum, membantu meningkatkan akuntabilitas pemerintah daerah."
+          },
+          {
+            "title": "Data Terintegrasi",
+            "description": "Integrasi data penerangan jalan umum dengan sistem informasi geografis (GIS) memungkinkan visualisasi dan analisis data yang lebih baik."
+          }
+        ],
+        "features": [
+          {
+            "title": "Peta Interaktif",
+            "description": "Menampilkan peta interaktif yang menunjukkan lokasi-lokasi lampu jalan umum beserta status operasionalnya."
+          },
+          {
+            "title": "Data dan Statistik",
+            "description": "Menyajikan data dan statistik terkait penerangan jalan umum, seperti jumlah lampu yang berfungsi dan yang rusak."
+          },
+          {
+            "title": "Informasi Detail Lampu",
+            "description": "Menyediakan informasi detail tentang setiap lampu jalan, termasuk lokasi, status, dan riwayat perbaikan."
+          },
+          {
+            "title": "Pelaporan Kerusakan",
+            "description": "Fitur bagi masyarakat untuk melaporkan kerusakan atau masalah pada lampu jalan."
+          },
+          {
+            "title": "Manajemen Pengguna",
+            "description": "Fitur administrator untuk mengelola pengguna aplikasi dan informasi lampu jalan."
+          }
+        ],
+        "image": [
+"assets/pju.png"
+        ],
+        "images": [
+            
+          "assets/gispju.png",
+          "assets/produkpju.png",
+          "assets/laporpju.png",
+          "assets/gispju.png",
+          "assets/produkpju.png",
+          "assets/laporpju.png"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "EWS dan Penanggulangan Bencana",
+        "description": "Early Warning System (EWS) adalah sistem yang dirancang untuk mendeteksi tanda-tanda awal bencana alam dan memberikan peringatan dini kepada masyarakat serta pihak berwenang. Tujuannya adalah untuk memungkinkan tindakan cepat dan tepat guna mengurangi dampak dari bencana tersebut.",
+        "advantages": [
+          {
+            "title": "Deteksi Dini dan Respons Cepat",
+            "description": "EWS memberikan peringatan dini terhadap ancaman bencana, memungkinkan respons yang cepat dan tepat untuk menyelamatkan nyawa dan mengurangi kerugian."
+          },
+          {
+            "title": "Kesadaran dan Kesiapsiagaan Publik",
+            "description": "Meningkatkan kesadaran masyarakat tentang potensi bencana dan pentingnya kesiapsiagaan, serta mengedukasi mereka tentang tindakan yang harus diambil."
+          },
+          {
+            "title": "Koordinasi Efektif",
+            "description": "EWS memfasilitasi koordinasi antara berbagai lembaga pemerintah, non-pemerintah, dan masyarakat, meningkatkan efektivitas respons terhadap bencana."
+          },
+          {
+            "title": "Pengurangan Dampak Bencana",
+            "description": "Dengan informasi awal, langkah-langkah mitigasi dapat diambil untuk meminimalkan dampak bencana terhadap masyarakat dan infrastruktur."
+          }
+        ],
+        "features": [
+          {
+            "title": "Pengumpulan dan Analisis Data Real Time",
+            "description": "Mengumpulkan data secara real-time dari berbagai sumber dan menganalisisnya untuk mendeteksi potensi bencana."
+          },
+          {
+            "title": "Pemantauan dan Deteksi",
+            "description": "Pemantauan menggunakan teknologi canggih untuk mendeteksi tanda-tanda awal bencana, seperti perubahan cuaca, aktivitas seismik, tingkat air, dan parameter lingkungan lainnya."
+          },
+          {
+            "title": "Sistem Informasi Geografis (GIS)",
+            "description": "Integrasi dengan GIS untuk visualisasi data bencana dan perencanaan mitigasi yang lebih baik."
+          },
+          {
+            "title": "Pelaporan Kerusakan",
+            "description": "Fitur bagi masyarakat untuk melaporkan kerusakan atau masalah pada lampu jalan."
+          },
+          {
+            "title": "Peringatan dan Notifikasi",
+            "description": "Mengirimkan peringatan dan notifikasi kepada masyarakat, pemerintah, dan organisasi terkait melalui berbagai saluran komunikasi, termasuk SMS, aplikasi mobile, sirene, dan media sosial."
+          }
+        ],
+        "image": [
+"assets/ews.png"
+        ],
+        "images": [
+          "assets/tanggapbencana.png",
+          "assets/produkews.png",
+          "assets/referensibencana.png",
+          "assets/tanggapbencana.png",
+          "assets/produkews.png",
+          "assets/referensibencana.png"
+        ]
+      },      
+      {
+        "id": 3,
+        "title": "Manajemen Kepegawaian Digital (SINANTA)",
+        "description": "Sinanta adalah aplikasi manajemen kepegawaian digital yang dirancang untuk meningkatkan efisiensi dan transparansi dalam pengelolaan data pegawai, proses rekrutmen, penilaian kinerja, serta pengembangan karier. Dengan Sinanta, organisasi dapat mengoptimalkan administrasi kepegawaian dan memberikan akses informasi yang mudah bagi pegawai dan manajer.",
+        "advantages": [
+            {
+                "title": "Efisiensi Administrasi",
+                "description": "Mempermudah pengelolaan data kepegawaian dan proses administrasi sehari-hari."
+            },
+            {
+                "title": "Manajemen Terpadu",
+                "description": "Mengintegrasikan berbagai fungsi HR dalam satu platform yang mudah digunakan."
+            },
+            {
+                "title": "Aksesibilitas",
+                "description": "Memberikan akses mudah kepada pegawai untuk informasi pribadi, slip gaji, dan permohonan cuti."
+            },
+            {
+                "title": "Transparansi",
+                "description": "Menyediakan platform yang transparan untuk penilaian kinerja dan pengembangan karier pegawai."
+            }
+        ],
+        "features": [
+            {
+                "title": "Rekrutmen dan Seleksi",
+                "description": "Proses rekrutmen yang terintegrasi dari pengumuman lowongan hingga penempatan pegawai."
+            },
+            {
+                "title": "Pelatihan dan Pengembangan",
+                "description": "Manajemen program pelatihan dan pengembangan untuk meningkatkan kompetensi pegawai."
+            },
+            {
+                "title": "Portal Layanan Mandiri",
+                "description": "Fasilitas bagi pegawai untuk mengakses informasi kepegawaian, mengajukan permohonan cuti, dan melihat slip gaji."
+            },
+            {
+                "title": "Manajemen Dokumen",
+                "description": "Digitalisasi penyimpanan dan pengelolaan dokumen kepegawaian untuk akses yang lebih mudah dan aman."
+            },
+            {
+                "title": "Manajemen Data Pegawai",
+                "description": "Digitalisasi penyimpanan dan pengelolaan data pegawai."
+            }
+        ],
+        "image": [
+"assets/sinanta.png"
+        ],
+        "images": [
+            "assets/produksinanta1.png",
+            "assets/produksinanta2.png",
+            "assets/produksinanta3.png",
+            "assets/produksinanta1.png",
+            "assets/produksinanta2.png",
+            "assets/produksinanta3.png"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "E-Kinerja",
+        "description": "E-Kinerja adalah aplikasi manajemen kinerja pegawai yang dirancang untuk memantau, mengukur, dan mengevaluasi kinerja individu maupun tim dalam suatu organisasi. Aplikasi ini membantu manajer dan pegawai untuk menetapkan target, memantau pencapaian, serta memberikan umpan balik yang konstruktif untuk meningkatkan produktivitas dan efektivitas kerja.",
+        "advantages": [
+            {
+                "title": "Pengukuran Kinerja yang Objektif",
+                "description": "Memungkinkan penilaian kinerja berdasarkan indikator yang terukur dan transparan."
+            },
+            {
+                "title": "Pengembangan Berbasis Kinerja",
+                "description": "Memberikan wawasan untuk perencanaan pelatihan dan pengembangan karier berdasarkan hasil kinerja."
+            },
+            {
+                "title": "Meningkatkan Produktivitas",
+                "description": "Membantu pegawai fokus pada prioritas kerja yang sesuai dengan tujuan organisasi."
+            },
+            {
+                "title": "Pemantauan Berkelanjutan",
+                "description": "Memfasilitasi pemantauan kinerja secara terus-menerus untuk mengidentifikasi pencapaian atau kendala."
+            }
+        ],
+        "features": [
+            {
+                "title": "Portal Mandiri Pegawai",
+                "description": "Memberikan akses bagi pegawai untuk melihat penilaian kinerja mereka, target, dan feedback yang diterima."
+            },
+            {
+                "title": "Umpan Balik Real-Time",
+                "description": "Fasilitas untuk memberikan dan menerima umpan balik secara langsung antara manajer dan pegawai."
+            },
+            {
+                "title": "Penetapan dan Pemantauan Target",
+                "description": "Alat untuk menetapkan target kerja individu dan memantau pencapaiannya secara berkala."
+            },
+            {
+                "title": "Pelaporan dan Analisis",
+                "description": "Pembuatan laporan kinerja dengan grafik dan analisis untuk memudahkan pengambilan keputusan."
+            },
+            {
+                "title": "Evaluasi Kinerja",
+                "description": "Sistem evaluasi yang terstruktur, memungkinkan penilaian periodik yang adil dan berdasarkan data."
+            }
+        ],
+        "image": [
+"assets/ekinerja.png"
+        ],
+        "images": [
+            "assets/produkekinerja1.png",
+            "assets/produkekinerja2.png",
+            "assets/produkekinerja3.png",
+            "assets/produkekinerja1.png",
+            "assets/produkekinerja2.png",
+            "assets/produkekinerja3.png"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Sistem Informasi Pelayanan Kepegawaian (SIPESAN)",
+        "description": "SIPESAN adalah aplikasi digital yang dirancang untuk memfasilitasi dan mengelola proses perizinan secara efisien dalam suatu organisasi atau instansi pemerintah. Aplikasi ini memungkinkan pengguna untuk mengajukan, memantau, dan mendapatkan persetujuan berbagai jenis izin dengan lebih cepat dan transparan.",
+        "advantages": [
+            {
+                "title": "Proses Perizinan yang Cepat",
+                "description": "Mempercepat pengajuan dan persetujuan izin melalui platform digital, mengurangi waktu tunggu."
+            },
+            {
+                "title": "Pengelolaan Data Terpusat",
+                "description": "Semua data perizinan tersimpan dalam satu sistem yang terintegrasi, memudahkan pengelolaan dan pencarian."
+            },
+            {
+                "title": "Kemudahan Akses",
+                "description": "Memungkinkan pengguna untuk mengajukan izin kapan saja dan di mana saja melalui aplikasi online canggih."
+            },
+            {
+                "title": "Transparansi",
+                "description": "Menyediakan akses yang jelas dan terbuka terhadap status pengajuan izin, meningkatkan kepercayaan pengguna."
+            }
+        ],
+        "features": [
+            {
+                "title": "Pengajuan Izin Digital",
+                "description": "Pengguna dapat mengajukan berbagai jenis izin secara online tanpa harus datang langsung ke kantor DPMPTSP."
+            },
+            {
+                "title": "Pemantauan Status Izin",
+                "description": "Pengguna dapat memantau status pengajuan izin mereka secara real-time, mulai dari pengajuan hingga persetujuan."
+            },
+            {
+                "title": "Manajemen Pengguna dan Dukungan",
+                "description": "Aplikasi ini memungkinkan pendaftaran akun pengguna, pengelolaan aplikasi, serta dukungan bagi pengguna untuk mempermudah proses perizinan."
+            },
+            {
+                "title": "Dokumentasi Digital",
+                "description": "Memungkinkan pengguna mengunggah dan menyimpan dokumen yang diperlukan secara digital, mengurangi kebutuhan berkas fisik."
+            },
+            {
+                "title": "Penyimpanan Data Pribadi",
+                "description": "SIPESAN juga menyediakan fitur laporan dan statistik yang dapat membantu dalam analisis kinerja perizinan dan pengambilan keputusan di tingkat manajemen."
+            }
+        ],
+        "image": [
+            "assets/sipesan.png"
+        ],
+        "images": [
+           
+            "assets/psipesan1.png",
+            "assets/psipesan2.png",
+            "assets/psipesan3.png",
+            "assets/psipesan1.png",
+            "assets/psipesan2.png",
+            "assets/psipesan3.png"
+           
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Sistem Survey Kepuasan Masyarakat (SKM)",
+        "description": "Sistem Survey Kepuasan Masyarakat adalah platform yang dirancang untuk mengumpulkan data mengenai tingkat kepuasan masyarakat terhadap layanan atau produk yang disediakan oleh suatu institusi atau organisasi. Data yang dikumpulkan biasanya mencakup berbagai aspek dari layanan atau produk tersebut, seperti kualitas, kecepatan, kemudahan, dan efektivitas.",
+        "advantages": [
+        {
+        "title": "Peningkatan Kualitas Layanan",
+        "description": "Mengidentifikasi area yang perlu diperbaiki berdasarkan umpan balik langsung dari pengguna."
+        },
+        {
+        "title": "Transparansi dan Akuntabilitas",
+        "description": "Membantu membangun kepercayaan publik dengan menunjukkan bahwa umpan balik masyarakat dihargai dan dipertimbangkan."
+        },
+        {
+        "title": "Pengumpulan Data yang Efisien",
+        "description": "Memungkinkan pengumpulan data secara sistematis dan terstruktur."
+        },
+        {
+        "title": "Responsif terhadap Masukan",
+        "description": "Meningkatkan kepuasan masyarakat dengan menunjukkan bahwa institusi mendengarkan dan merespons."
+        }
+        ],
+        "features": [
+        {
+        "title": "Antarmuka Pengguna yang Ramah",
+        "description": "Navigasi yang jelas untuk memudahkan responden dalam mengisi survei."
+        },
+        {
+        "title": "Pertanyaan Kustomisasi",
+        "description": "Kemampuan untuk menyesuaikan pertanyaan survei sesuai dengan kebutuhan spesifik institusi atau layanan."
+        },
+        {
+        "title": "Pengumpulan Data Real-Time",
+        "description": "Fitur pelaporan yang memungkinkan visualisasi hasil survei dalam bentuk grafik atau tabel."
+        },
+        {
+        "title": "Fitur Analisis Data",
+        "description": "Fitur pemfilteran untuk melihat hasil berdasarkan kriteria tertentu."
+        },
+        {
+        "title": "Keamanan dan Privasi",
+        "description": "Fitur untuk melindungi data pribadi responden dan memastikan bahwa data dikumpulkan dan disimpan dengan aman."
+        }
+        ],
+        "image": [
+        "assets/skm.png"
+        ],
+        "images": [
+        "assets/pskm1.png",
+        "assets/pskm2.png",
+        "assets/pskm3.png",
+        "assets/pskm1.png",
+        "assets/pskm2.png",
+        "assets/pskm3.png"
+        ]
+        },
+        {
+            "id": 7,
+            "title": "Sistem Mall Pelayanan Publik",
+            "description": "Mall Pelayanan Publik (MPP) Kutai Kartanegara adalah pusat layanan pemerintah yang mengintegrasikan berbagai layanan publik dalam satu lokasi. Tujuan utamanya adalah untuk mempermudah proses administrasi bagi warga dengan menyediakan layanan satu pintu.",
+            "advantages": [
+                {
+                    "title": "Efisiensi Tinggi",
+                    "description": "Proses administrasi lebih cepat dengan layanan satu pintu."
+                },
+                {
+                    "title": "Aksesibilitas Mudah",
+                    "description": "Layanan tersedia dalam satu lokasi dan dapat diakses secara online."
+                },
+                {
+                    "title": "Transparansi",
+                    "description": "Sistem layanan yang terbuka dan dapat dipantau real-time."
+                },
+                {
+                    "title": "Inovasi Berkelanjutan",
+                    "description": "Sistem yang terus diperbarui sesuai kebutuhan masyarakat."
+                }
+            ],
+            "features": [
+                {
+                    "title": "Pelayanan Terpadu Satu Pintu (PTSP)",
+                    "description": "Menghemat waktu dan usaha warga dalam mengurus berbagai keperluan administratif."
+                },
+                {
+                    "title": "Pelayanan Digital",
+                    "description": "Memudahkan warga untuk mengurus dokumen atau perizinan tanpa harus datang langsung ke lokasi."
+                },
+                {
+                    "title": "Sistem Antrian Elektronik",
+                    "description": "Memberikan nomor antrian secara otomatis, dan memantau pergerakan antrian secara real-time."
+                }
+            ],
+            "image": [
+        "assets/sistemmall.png"
+        ],
+            "images": [
+                
+                "assets/psistemmall1.png",
+                "assets/psistemmall2.png",
+                "assets/psistemmall3.png",
+                "assets/psistemmall1.png",
+                "assets/psistemmall2.png",
+                "assets/psistemmall3.png"
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Sistem Touchscreen MPP",
+            "description": "Touchscreen MPP (Mal Pelayanan Publik) adalah aplikasi interaktif yang digunakan untuk mempermudah akses publik terhadap berbagai layanan pemerintah dalam satu platform.",
+            "advantages": [
+                {
+                    "title": "Pengoperasian Mudah",
+                    "description": "Mempermudah akses ke berbagai layanan publik tanpa perlu interaksi langsung dengan petugas."
+                },
+                {
+                    "title": "Efisiensi Waktu",
+                    "description": "Meminimalkan waktu yang diperlukan untuk mencari informasi atau layanan tertentu."
+                },
+                {
+                    "title": "Pengurangan Penggunaan Dokumen Fisik",
+                    "description": "Mengurangi kebutuhan untuk mencetak dan menggunakan dokumen fisik, yang lebih ramah lingkungan."
+                }
+            ],
+            "features": [
+                {
+                    "title": "Navigasi Interaktif",
+                    "description": "Pengguna dapat dengan mudah menemukan layanan yang mereka butuhkan melalui antarmuka berbasis touchscreen."
+                },
+                {
+                    "title": "Akses Informasi Publik",
+                    "description": "Memberikan akses langsung ke dokumen dan informasi penting, seperti formulir, persyaratan, dan prosedur layanan."
+                },
+                {
+                    "title": "Pembaharuan Real-Time",
+                    "description": "Menyediakan informasi terkini mengenai jadwal layanan, antrian, dan pengumuman penting."
+                }
+            ],
+            "image": [
+        "assets/mpp.png"
+        ],
+            "images": [
+               
+                "assets/pmpp1.png",
+                "assets/pmpp2.png",
+                "assets/pmpp3.png",
+                "assets/pmpp1.png",
+                "assets/pmpp2.png",
+                "assets/pmpp3.png"
+            ]
+        },
+        {
+            "id": 9,
+            "title": "Anjungan Cetak Mandiri",
+
+            "description": "Anjungan Cetak Mandiri (ACM) adalah sistem yang memungkinkan pengguna untuk mencetak berbagai jenis dokumen secara langsung tanpa harus melalui proses manual yang memerlukan bantuan pihak ketiga. Sistem ini sering digunakan oleh instansi pemerintah untuk mempermudah akses dan pengelolaan dokumen.",
+            "advantages": [
+                {
+                    "title": "Kemandirian Pengguna",
+                    "description": "Pengguna dapat mencetak dokumen kapan saja tanpa bergantung pada petugas atau perangkat cetak yang dikelola oleh pihak lain."
+                },
+                {
+                    "title": "Efisiensi Waktu",
+                    "description": "Proses pencetakan yang cepat dan langsung mengurangi waktu tunggu dibandingkan dengan sistem pencetakan tradisional yang melibatkan interaksi langsung dengan petugas."
+                },
+                {
+                    "title": "Mengurangi Antrian",
+                    "description": "Dengan mengurangi ketergantungan pada staf untuk pencetakan, sistem ini dapat mengurangi antrian dan meningkatkan kepuasan pengguna."
+                }
+            ],
+            "features": [
+                {
+                    "title": "Pengajuan Izin Digital",
+                    "description": "Memungkinkan pengguna untuk memilih format dokumen (seperti PDF, DOCX) dan kualitas cetak (seperti draft atau kualitas tinggi)."
+                },
+                {
+                    "title": "Pemantauan Status Pencetakan",
+                    "description": "Fitur untuk memantau status pekerjaan cetak, termasuk informasi tentang kemajuan pencetakan dan estimasi waktu selesai."
+                },
+                {
+                    "title": "Keamanan Data",
+                    "description": "Fitur untuk memastikan bahwa dokumen yang dicetak hanya dapat diakses dan dicetak oleh pengguna yang sah, melalui mekanisme autentikasi atau kode akses."
+                },
+                {
+                    "title": "Kemudahan Penggunaan",
+                    "description": "Antarmuka yang dirancang untuk memudahkan pengguna dari berbagai latar belakang untuk melakukan pencetakan dengan cepat dan efektif."
+                },
+                {
+                    "title": "Laporan dan Riwayat",
+                    "description": "Menyediakan laporan dan riwayat pencetakan yang dapat diakses oleh pengguna untuk melacak aktivitas dan mengelola dokumen yang telah dicetak."
+                }
+            ],
+            "image": [
+        "assets/cetakmandiri.png"
+        ],
+            "images": [
+            
+                "assets/pcetakmandiri1.png",
+                "assets/pcetakmandiri2.png",
+                "assets/pcetakmandiri3.png",
+                "assets/pcetakmandiri1.png",
+                "assets/pcetakmandiri2.png",
+                "assets/pcetakmandiri3.png"
+            ]
+        },
+        {
+            "id": 10,
+            "title": "Sistem Antrian",
+            "description": "TV Antrian adalah sistem yang dirancang untuk mengelola dan menampilkan informasi antrian di berbagai lokasi layanan publik seperti kantor pemerintahan, bank, atau rumah sakit. Sistem ini sering kali terdiri dari layar yang menampilkan nomor antrian, status layanan, dan informasi lainnya yang membantu pelanggan atau pengunjung mengetahui posisi mereka dalam antrian dan estimasi waktu pelayanan.",
+            "advantages": [
+                {
+                    "title": "Peningkatan Efisiensi",
+                    "description": "Sistem ini mengurangi kebutuhan untuk interaksi langsung dengan petugas dan membantu mengatur arus pengunjung dengan lebih baik, mengurangi waktu tunggu dan ketidakpastian."
+                },
+                {
+                    "title": "Transparansi",
+                    "description": "Dengan menampilkan nomor antrian dan status pelayanan secara langsung, pelanggan dapat melihat posisi mereka dan mendapatkan informasi yang jelas tentang waktu tunggu."
+                },
+                {
+                    "title": "Pengalaman Pelanggan yang Lebih Baik",
+                    "description": "Informasi yang jelas dan teratur membantu mengurangi frustrasi pelanggan, meningkatkan kepuasan layanan."
+                }
+            ],
+            "features": [
+                {
+                    "title": "Fleksibilitas",
+                    "description": "Sistem dapat disesuaikan dengan berbagai jenis layanan dan alur antrian yang berbeda sesuai kebutuhan."
+                },
+                {
+                    "title": "Kemudahan Pengelolaan",
+                    "description": "Petugas dapat dengan mudah memantau status antrian dan melakukan penyesuaian bila diperlukan tanpa harus berkomunikasi langsung dengan setiap pengunjung."
+                },
+                {
+                    "title": "Tampilan Nomor Antrian",
+                    "description": "Menampilkan nomor antrian yang sedang dilayani dan nomor antrian berikutnya."
+                },
+                {
+                    "title": "Status Pelayanan",
+                    "description": "Menunjukkan status dari berbagai loket atau meja pelayanan, seperti \"Sedang Dilayani\" atau \"Tunggu\"."
+                },
+                {
+                    "title": "Notifikasi",
+                    "description": "Menampilkan pesan atau pengumuman penting kepada pengunjung, seperti perubahan prosedur atau informasi penting lainnya."
+                },
+                {
+                    "title": "Responsif",
+                    "description": "Menyesuaikan tampilan untuk berbagai ukuran layar dan resolusi untuk memastikan keterbacaan di berbagai kondisi."
+                },
+                {
+                    "title": "Integrasi Sistem",
+                    "description": "Mampu terhubung dengan sistem manajemen antrian lainnya untuk update data secara real-time."
+                }
+            ],
+            "image": [
+        "assets/sistemantrian.png"
+        ],
+            "images": [
+                
+                "assets/psistemantrian1.png",
+                "assets/psistemantrian2.png",
+                "assets/psistemantrian3.png",
+                "assets/psistemantrian1.png",
+                "assets/psistemantrian2.png",
+                "assets/psistemantrian3.png"
+            ],
+
+            "images1": [
+                
+             
+                "assets/psistemantrian2.png",
+                "assets/psistemantrian3.png"
+            ]
+
+        },
+
+        {
+            "id": 11,
+            "title": "E - Personal",
+            "description": "E-Personal adalah aplikasi digital yang dirancang untuk mengelola data dan informasi pribadi pegawai secara efisien. Aplikasi ini memungkinkan organisasi untuk menyimpan, mengakses, dan mengelola informasi kepegawaian seperti data pribadi, riwayat pekerjaan, dokumen penting, dan catatan kinerja dalam satu platform yang terpusat dan mudah diakses.",
+            "advantages": [
+                {
+                    "title": "Pengelolaan Data yang Terpusat",
+                    "description": "Menyimpan semua informasi pribadi dan kepegawaian dalam satu platform, memudahkan akses dan pengelolaan."
+                },
+                {
+                    "title": "Integrasi yang Lancar",
+                    "description": "Dapat diintegrasikan dengan sistem HR lainnya untuk manajemen kepegawaian yang lebih komprehensif."
+                },
+                {
+                    "title": "Keamanan Data",
+                    "description": "Menjamin perlindungan data pribadi dengan fitur keamanan yang canggih."
+                },
+                {
+                    "title": "Aksesibilitas Mudah",
+                    "description": "Memungkinkan pegawai dan manajer untuk mengakses informasi kapan saja dan di mana saja melalui portal yang aman."
+                }
+            ],
+            "features": [
+                {
+                    "title": "Manajemen Absensi",
+                    "description": "Fitur ini memungkinkan pencatatan dan pemantauan kehadiran pegawai secara real-time, termasuk pengajuan cuti, izin, dan lembur."
+                },
+                {
+                    "title": "Penilaian Kinerja",
+                    "description": "Sistem ini dilengkapi dengan modul untuk melakukan penilaian kinerja pegawai secara berkala, yang dapat diintegrasikan dengan laporan harian dan capaian target."
+                },
+                {
+                    "title": "Dokumen Digital",
+                    "description": "Penyimpanan dan pengelolaan dokumen penting seperti kontrak kerja, sertifikat pelatihan, dan lainnya."
+                },
+                {
+                    "title": "Riwayat Pekerjaan",
+                    "description": "Catatan lengkap mengenai riwayat pekerjaan, promosi, dan perpindahan jabatan pegawai."
+                },
+                {
+                    "title": "Penyimpanan Data Pribadi",
+                    "description": "Menyimpan informasi pribadi pegawai seperti alamat, kontak, dan detail keluarga."
+                }
+            ],
+            "image": [
+                "assets/epersonal.png"
+            ],
+            "images": [
+                "assets/pepersonal1.png",
+                "assets/pepersonal2.png",
+                "assets/pepersonal3.png",
+                "assets/pepersonal1.png",
+                "assets/pepersonal2.png",
+                "assets/pepersonal3.png"
+            ]
+        }
+        ,{
+            "id": 12,
+            "title": "Perizinan",
+            "description": "Sistem perizinan digital adalah platform yang dirancang untuk mengelola proses pengajuan, evaluasi, dan penerbitan izin secara online. Sistem ini biasanya diterapkan oleh pemerintah daerah untuk mempermudah warga dan perusahaan dalam mengurus berbagai jenis izin, seperti izin usaha, izin mendirikan bangunan, dan lainnya.",
+            "advantages": [
+                {
+                    "title": "Efisiensi Waktu dan Proses",
+                    "description": "Dengan digitalisasi data kepegawaian, proses administrasi menjadi lebih cepat dan akurat, mengurangi kemungkinan kesalahan manual."
+                },
+                {
+                    "title": "Transparansi dan Akuntabilitas",
+                    "description": "Sistem ini meningkatkan transparansi dalam pengelolaan SDM, memungkinkan pengawasan yang lebih baik terhadap kinerja pegawai."
+                },
+                {
+                    "title": "Integrasi Sistem",
+                    "description": "E-Personal dapat diintegrasikan dengan sistem lain yang terkait dengan manajemen SDM, seperti payroll dan sistem informasi lainnya."
+                },
+                {
+                    "title": "Penghematan Biaya",
+                    "description": "Dengan berkurangnya penggunaan kertas dan sumber daya manusia untuk administrasi manual, sistem ini berkontribusi pada penghematan biaya operasional."
+                }
+            ],
+            "features": [
+                {
+                    "title": "Pengajuan Online",
+                    "description": "Pengguna dapat mengajukan permohonan izin secara online tanpa perlu datang langsung ke kantor terkait."
+                },
+                {
+                    "title": "Penilaian Kinerja",
+                    "description": "Pemohon bisa melacak status permohonan mereka secara real-time, dari tahap pengajuan hingga persetujuan akhir."
+                },
+                {
+                    "title": "Data Kepegawaian Terpadu",
+                    "description": "E-Personal mengintegrasikan data kepegawaian, termasuk data personalia, riwayat pekerjaan, dan informasi terkait lainnya, dalam satu sistem yang mudah diakses."
+                },
+                {
+                    "title": "Laporan dan Analitik",
+                    "description": "Sistem ini menyediakan laporan dan analitik yang membantu pengambil keputusan dalam melakukan evaluasi terhadap kinerja dan kebutuhan SDM."
+                }
+            ],
+            "image": [
+                "assets/perizinan.png"
+            ],
+            "images": [
+                "assets/pperizinan1.png",
+                "assets/pperizinan2.png",
+                "assets/pperizinan3.png",
+                "assets/pperizinan1.png",
+                "assets/pperizinan2.png",
+                "assets/pperizinan3.png"
+            ]
+        }
+        ,
+        {
+            "id": 13,
+            "title": "Tv Informasi",
+            "description": "TV Informasi merupakan sebuah sistem digital signage yang digunakan untuk menyampaikan berbagai informasi penting secara visual kepada publik. Sistem ini umumnya ditempatkan di area yang sering dilalui orang, seperti lobi, aula, atau area umum lainnya, sehingga informasi dapat diakses dengan mudah oleh banyak orang.",
+            "advantages": [
+                {
+                    "title": "Penyebaran Informasi yang Efisien",
+                    "description": "Dengan adanya TV Informasi, berbagai pengumuman dan informasi penting dapat disampaikan secara cepat dan efisien tanpa memerlukan media cetak atau pertemuan tatap muka."
+                },
+                {
+                    "title": "Integrasi yang Lancar",
+                    "description": "Karena informasi ditampilkan di tempat-tempat strategis, masyarakat dapat lebih mudah dan sering mengakses informasi tersebut, meningkatkan kesadaran dan partisipasi publik."
+                },
+                {
+                    "title": "Hemat Biaya",
+                    "description": "Menggunakan TV Informasi mengurangi kebutuhan akan materi cetak, seperti poster dan brosur, yang dapat menghemat biaya operasional dalam jangka panjang."
+                },
+                {
+                    "title": "Fleksibilitas Penggunaan",
+                    "description": "Konten yang ditampilkan bisa dengan mudah diubah sesuai kebutuhan, sehingga sistem ini sangat fleksibel dalam penggunaannya, baik untuk informasi sehari-hari maupun acara khusus."
+                }
+            ],
+            "features": [
+                {
+                    "title": "Konten Dinamis",
+                    "description": "Sistem ini mendukung pemutaran berbagai jenis konten seperti video, gambar, teks berjalan, dan presentasi slide yang dapat diatur sesuai dengan kebutuhan informasi yang ingin disampaikan."
+                },
+                {
+                    "title": "Jadwal Penayangan",
+                    "description": "Pengguna dapat menjadwalkan kapan konten tertentu akan ditayangkan. Fitur ini mempermudah pengelolaan informasi yang disampaikan berdasarkan waktu atau acara tertentu."
+                },
+                {
+                    "title": "Remote Management",
+                    "description": "Pengelola dapat mengontrol dan mengubah konten yang ditampilkan secara remote, sehingga fleksibilitas dalam pengelolaan konten sangat tinggi."
+                },
+                {
+                    "title": "Tampilan Interaktif",
+                    "description": "Beberapa TV Informasi memiliki layar sentuh, memungkinkan pengguna untuk berinteraksi langsung dengan konten yang disajikan, misalnya untuk mencari informasi spesifik atau melihat detail acara."
+                }
+            ],
+            "image": [
+                "assets/tv.png"
+            ],
+            "images": [
+                "assets/ptv1.png",
+                "assets/ptv2.png",
+                "assets/ptv3.png",
+                "assets/ptv1.png",
+                "assets/ptv2.png",
+                "assets/ptv3.png"
+            ]
+        }
+        ,
+        {
+            "id": 14,
+            "title": "Satu Data UMKM",
+            "description": "Satu Data UMKM merupakan platform komprehensif yang dirancang untuk menyatukan dan mengelola data terkait Usaha Mikro, Kecil, dan Menengah (UMKM) dalam satu sistem terpusat. Tujuan utamanya adalah untuk menyederhanakan pengumpulan, analisis, dan akses data bagi berbagai pemangku kepentingan, termasuk lembaga pemerintah, lembaga keuangan, dan pemilik UMKM itu sendiri.",
+            "advantages": [
+                {
+                    "title": "Efisiensi Operasional",
+                    "description": "Mengurangi duplikasi data dan inefisiensi dalam proses pengumpulan data, sehingga menghemat waktu dan sumber daya."
+                },
+                {
+                    "title": "Pengambilan keputusan yang lebih baik",
+                    "description": "Mendukung penetapan prioritas yang lebih efektif dalam pengembangan dan pembiayaan UMKM."
+                },
+                {
+                    "title": "Transparansi dan Akuntabilitas",
+                    "description": "Memungkinkan pelacakan dan evaluasi kinerja UMKM secara menyeluruh dan transparan."
+                },
+                {
+                    "title": "Dukungan untuk Kebijakan Pemerintah",
+                    "description": "Sebagai alat pendukung utama dalam pengembangan kebijakan yang mendukung pemberdayaan UMKM, khususnya dalam menghadapi tantangan ekonomi digital."
+                }
+            ],
+            "features": [
+                {
+                    "title": "Data Integrasi",
+                    "description": "Memastikan konsistensi dan akurasi data melalui standarisasi format dan prosedur pengumpulan data."
+                },
+                {
+                    "title": "Analisis Data dan Pelaporan",
+                    "description": "Laporan yang dapat disesuaikan sesuai kebutuhan pengguna, baik dalam format grafis maupun naratif."
+                },
+                {
+                    "title": "Dashboard Interaktif",
+                    "description": "Dashboard dapat diakses oleh berbagai pihak sesuai dengan hak akses yang diberikan, memfasilitasi pengambilan keputusan yang cepat dan berbasis data."
+                },
+                {
+                    "title": "Manajemen Data Real-time",
+                    "description": "Fitur pemantauan data secara real-time yang memudahkan pengawasan dan pelacakan perkembangan UMKM."
+                }
+            ],
+            "image": [
+        "assets/umkm.png"
+        ],
+            "images": [
+                
+                "assets/pumkm1.png",
+                "assets/pumkm2.png",
+                "assets/pumkm3.png",
+                "assets/pumkm1.png",
+                "assets/pumkm2.png",
+                "assets/pumkm3.png"
+            ]
+        },
+        
+        {
+            "id": 17,
+            "title": "GIS Potensi Investasi",
+            "description": "GIS (Geographic Information System) Potensi Investasi adalah sebuah sistem yang menggunakan teknologi pemetaan digital untuk mengidentifikasi, menganalisis, dan memvisualisasikan potensi investasi di suatu wilayah. Sistem ini membantu pemerintah, investor, dan berbagai pihak lainnya dalam membuat keputusan investasi yang lebih tepat berdasarkan data spasial.",
+            "advantages": [
+                {
+                    "title": "Informasi Terperinci dan Terstruktur ",
+                    "description": "Aplikasi ini menyediakan informasi yang lengkap dan terstruktur tentang potensi investasi, termasuk profil daerah, potensi investasi, peluang investasi, dan realisasi investasi."
+                },
+                {
+                    "title": "Visualisasi Data Interaktif",
+                    "description": "Informasi disajikan dalam bentuk peta interaktif, grafik, dan rekapitulasi data, memudahkan pengguna dalam memahami dan menganalisis data"
+                },
+                {
+                    "title": "Aksesibilitas dan Transparansi",
+                    "description": "Aplikasi ini meningkatkan aksesibilitas data kepegawaian dan informasi terkait, serta mendorong transparansi dalam pengelolaan investasi."
+                },
+                {
+                    "title": "Manajemen Data dan Pengguna",
+                    "description": "Fitur administrator memungkinkan pengelolaan data aplikasi dan manajemen pengguna, memastikan bahwa informasi selalu akurat dan terkini"
+                }
+
+            ],
+            "features": [
+                {
+                    "title": "Fleksibilitas",
+                    "description": "Sistem dapat disesuaikan dengan berbagai jenis layanan dan alur antrian yang berbeda sesuai kebutuhan."
+                },
+                {
+                    "title": "Kemudahan Pengelolaan",
+                    "description": "Petugas dapat dengan mudah memantau status antrian dan melakukan penyesuaian bila diperlukan tanpa harus berkomunikasi langsung dengan setiap pengunjung."
+                },
+                {
+                    "title": "Tampilan Nomor Antrian",
+                    "description": "Menampilkan nomor antrian yang sedang dilayani dan nomor antrian berikutnya."
+                },
+                {
+                    "title": "Status Pelayanan",
+                    "description": "Menunjukkan status dari berbagai loket atau meja pelayanan, seperti \"Sedang Dilayani\" atau \"Tunggu\"."
+                },
+                {
+                    "title": "Notifikasi",
+                    "description": "Menampilkan pesan atau pengumuman penting kepada pengunjung, seperti perubahan prosedur atau informasi penting lainnya."
+                },
+                {
+                    "title": "Responsif",
+                    "description": "Menyesuaikan tampilan untuk berbagai ukuran layar dan resolusi untuk memastikan keterbacaan di berbagai kondisi."
+                },
+                {
+                    "title": "Integrasi Sistem",
+                    "description": "Mampu terhubung dengan sistem manajemen antrian lainnya untuk update data secara real-time."
+                }
+            ],
+            "image": [
+                "assets/gis-investasi.png"
+            ],
+            "images": [
+                
+                "assets/psistemantrian1.png",
+                "assets/lap-investasi.png",
+                "assets/psistemantrian3.png"
+            ]
+        },
+    
+        {
+            "id": 18,
+            "title": "E-Layanan Kepegawaian",
+            "description": "Platform digital yang dirancang untuk mengelola berbagai aspek administrasi kepegawaian di sebuah organisasi, terutama di sektor publik atau pemerintahan. Platform ini membantu meningkatkan efisiensi dan transparansi dalam pengelolaan data dan proses kepegawaian.",
+            "advantages": [
+                {
+                    "title": "Informasi Terperinci dan Terstruktur ",
+                    "description": "Aplikasi ini menyediakan informasi yang lengkap dan terstruktur tentang potensi investasi, termasuk profil daerah, potensi investasi, peluang investasi, dan realisasi investasi."
+                },
+                {
+                    "title": "Visualisasi Data Interaktif",
+                    "description": "Informasi disajikan dalam bentuk peta interaktif, grafik, dan rekapitulasi data, memudahkan pengguna dalam memahami dan menganalisis data"
+                },
+                {
+                    "title": "Aksesibilitas dan Transparansi",
+                    "description": "Aplikasi ini meningkatkan aksesibilitas data kepegawaian dan informasi terkait, serta mendorong transparansi dalam pengelolaan investasi."
+                },
+                {
+                    "title": "Manajemen Data dan Pengguna",
+                    "description": "Fitur administrator memungkinkan pengelolaan data aplikasi dan manajemen pengguna, memastikan bahwa informasi selalu akurat dan terkini"
+                }
+
+            ],
+            "features": [
+                {
+                    "title": "Fleksibilitas",
+                    "description": "Sistem dapat disesuaikan dengan berbagai jenis layanan dan alur antrian yang berbeda sesuai kebutuhan."
+                },
+                {
+                    "title": "Kemudahan Pengelolaan",
+                    "description": "Petugas dapat dengan mudah memantau status antrian dan melakukan penyesuaian bila diperlukan tanpa harus berkomunikasi langsung dengan setiap pengunjung."
+                },
+                {
+                    "title": "Tampilan Nomor Antrian",
+                    "description": "Menampilkan nomor antrian yang sedang dilayani dan nomor antrian berikutnya."
+                },
+                {
+                    "title": "Status Pelayanan",
+                    "description": "Menunjukkan status dari berbagai loket atau meja pelayanan, seperti \"Sedang Dilayani\" atau \"Tunggu\"."
+                },
+                {
+                    "title": "Notifikasi",
+                    "description": "Menampilkan pesan atau pengumuman penting kepada pengunjung, seperti perubahan prosedur atau informasi penting lainnya."
+                },
+                {
+                    "title": "Responsif",
+                    "description": "Menyesuaikan tampilan untuk berbagai ukuran layar dan resolusi untuk memastikan keterbacaan di berbagai kondisi."
+                },
+                {
+                    "title": "Integrasi Sistem",
+                    "description": "Mampu terhubung dengan sistem manajemen antrian lainnya untuk update data secara real-time."
+                }
+            ],
+            "image": [
+                "assets/e-layanan.png"
+            ],
+            "images": [
+                
+                "assets/psistemantrian1.png",
+                "assets/lap-elayanan.png",
+                "assets/psistemantrian3.png"
+            ]
+        },
+
+        {
+            "id": 19,
+            "title": "Layanan Informasi Pendapatan Daerah",
+            "description": "SIMPATDA adalah sebuah sistem informasi manajemen pendapatan daerah yang berfungsi membantu proses di dalam dinas pendapatan daerah, seperti penghitungan pajak, pencatatan identitas wajib pajak, dan pembuatan laporan pajak.",
+            "advantages": [
+                {
+                    "title": "Informasi Terperinci dan Terstruktur ",
+                    "description": "Aplikasi ini menyediakan informasi yang lengkap dan terstruktur tentang potensi investasi, termasuk profil daerah, potensi investasi, peluang investasi, dan realisasi investasi."
+                },
+                {
+                    "title": "Visualisasi Data Interaktif",
+                    "description": "Informasi disajikan dalam bentuk peta interaktif, grafik, dan rekapitulasi data, memudahkan pengguna dalam memahami dan menganalisis data"
+                },
+                {
+                    "title": "Aksesibilitas dan Transparansi",
+                    "description": "Aplikasi ini meningkatkan aksesibilitas data kepegawaian dan informasi terkait, serta mendorong transparansi dalam pengelolaan investasi."
+                },
+                {
+                    "title": "Manajemen Data dan Pengguna",
+                    "description": "Fitur administrator memungkinkan pengelolaan data aplikasi dan manajemen pengguna, memastikan bahwa informasi selalu akurat dan terkini"
+                }
+
+            ],
+            "features": [
+                {
+                    "title": "Fleksibilitas",
+                    "description": "Sistem dapat disesuaikan dengan berbagai jenis layanan dan alur antrian yang berbeda sesuai kebutuhan."
+                },
+                {
+                    "title": "Kemudahan Pengelolaan",
+                    "description": "Petugas dapat dengan mudah memantau status antrian dan melakukan penyesuaian bila diperlukan tanpa harus berkomunikasi langsung dengan setiap pengunjung."
+                },
+                {
+                    "title": "Tampilan Nomor Antrian",
+                    "description": "Menampilkan nomor antrian yang sedang dilayani dan nomor antrian berikutnya."
+                },
+                {
+                    "title": "Status Pelayanan",
+                    "description": "Menunjukkan status dari berbagai loket atau meja pelayanan, seperti \"Sedang Dilayani\" atau \"Tunggu\"."
+                },
+                {
+                    "title": "Notifikasi",
+                    "description": "Menampilkan pesan atau pengumuman penting kepada pengunjung, seperti perubahan prosedur atau informasi penting lainnya."
+                },
+                {
+                    "title": "Responsif",
+                    "description": "Menyesuaikan tampilan untuk berbagai ukuran layar dan resolusi untuk memastikan keterbacaan di berbagai kondisi."
+                },
+                {
+                    "title": "Integrasi Sistem",
+                    "description": "Mampu terhubung dengan sistem manajemen antrian lainnya untuk update data secara real-time."
+                }
+            ],
+            "image": [
+                "assets/lap1.png"
+            ],
+            "images": [
+                
+                "assets/landingpajak.png",
+                "assets/imglogin.png",
+                "assets/psistemantrian3.png"
+            ]
+        }
+
+    
+            
+        ]
+    }

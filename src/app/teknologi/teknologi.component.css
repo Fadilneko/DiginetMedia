@@ -1,0 +1,420 @@
+.profil-header {
+    height: 629px;  /* Mengatur tinggi agar sesuai dengan viewport */
+    color: white;
+
+    
+  
+}
+
+.profil-content {
+    max-width: 60%;             /* Mengatur lebar maksimum konten */
+
+}
+
+.title {
+    font-size: 3rem;            /* Sesuaikan ukuran font */
+ 
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;           /* Mengatur teks menjadi rata kiri */
+    margin-bottom: 300px;
+}
+
+/* Gaya container */
+
+
+.item {
+    padding: 50px 0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.text-container {
+    max-width: 50%;
+}
+
+.item h2 {
+    font-size: 30px;
+    color: #003366;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.item img {
+    max-width: 30%;
+    height: auto;
+}
+
+.item-left {
+    flex-direction: row;
+}
+
+.item-right {
+    flex-direction: row-reverse;
+}
+
+.item img {
+    margin-left: 20px;
+}
+
+.item h2 {
+    text-align: left;
+    padding-left: 100px;
+}
+
+.item-offset h2 {
+    margin-left: -100px;
+
+}
+
+/* Background untuk Mobile Application dan Artificial Intelligence */
+.item-left.item-offset {
+    background-color: #edf3ff;
+}
+
+/* Background untuk System Integration dan Dynamic Database */
+.item-right.item-offset-left {
+    background-color: white;
+
+}
+.item-right.item-offset-left h2{
+    background-color: white;
+
+}
+.item-right.item-offset-left h2 {
+    margin-left: 20px;   /* Mengatur margin kiri untuk menempatkan elemen h2 sejajar dengan p */
+    padding-left: 0;     /* Menghapus padding tambahan pada kiri */
+    text-align: left;    /* Memastikan teks h2 dirata kiri */
+    max-width: 500px;    /* Sesuaikan dengan lebar maksimum elemen text-container */
+    margin-right: 100px;
+}
+
+.item-right.item-offset-left p {
+    margin-left: 20px;   /* Memastikan margin kiri sama dengan h2 */
+    text-align: left;    /* Memastikan teks p dirata kiri */
+    margin-right: 100px;
+}
+
+/* dd */
+.item-left.item-offset h2{
+    margin-left: 100px;
+}
+.item-left.item-offset p{
+    margin-left: 200px;
+}
+
+.apitext{
+    margin-right: 100px;
+}
+.cta {
+   
+    background-color: #003399;
+    color: white;
+    padding: 0px 20px;
+  }
+  
+  .cta-content {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .cta img {
+    width: 32%;
+  }
+  
+  .cta-text {
+    max-width: 400px;
+  }
+  
+  .cta p {
+    font-size: 24px; /* Ukuran font sesuai gambar */
+    margin-bottom: 10%;
+  }
+  
+  .cta button {
+    background-color: white;
+    color: #003399;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .cta button:hover {
+    background-color: #ddd;
+  }
+
+
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+
+   
+     
+}
+
+@media only screen and (min-width: 414px) and (max-width: 896px) {
+  
+}
+
+@media only screen and (min-width: 390px) and (max-width: 884px) {
+
+  
+}
+
+@media only screen and (min-width: 360px) and (max-width: 740px) {
+
+
+    body {
+        width: 100vh;
+    }
+
+    .profil-header {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .profil-content {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .profil-content h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .profil-content p {
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item img {
+        max-width: 70%;
+        margin-bottom: 15px;
+    }
+
+    .text-container {
+        max-width: 85%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .item h2 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .item p {
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .item-left.item-offset h2, 
+    .item-left.item-offset p {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .item-left.item-offset h2{
+        margin-left: -100px;
+    }
+
+ .cta {
+     padding: 15px;
+ }
+
+
+
+ .cta p {
+     font-size: 18px; /* Ukuran font pada CTA */
+ }
+ .cta button {
+     padding: 8px 16px;
+     font-size: 14px;
+ }
+
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        width: 100vh;
+    }
+
+    .profil-header {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .profil-content {
+        max-width: 90%;
+        padding: 2rem;
+    }
+
+    .profil-content h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .profil-content p {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item img {
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .text-container {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .item h2 {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .item p {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .item-left.item-offset h2, 
+    .item-left.item-offset p {
+        text-align: left;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .item-left.item-offset h2{
+        margin-left: -100px;
+    }
+
+
+
+
+
+ .cta {
+  margin-top: 17%;
+   background-color: #003399;
+   color: white;
+   padding: 0px 20px;
+ }
+
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+
+ body {
+     width: 68vh;
+ }
+
+
+  
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+
+ body {
+     width: 73.7vh;
+ }
+
+
+}
+
+@media only screen and (min-width: 912px) and (max-width: 1368px) {
+
+
+
+ body {
+     width: 73.7vh;
+ }
+
+ 
+
+}
+
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+
+}
+
+@media only screen and (min-width: 344px) and (max-width: 882px) {
+
+
+ 
+}
+
+@media only screen and (min-width: 853px) and (max-width: 1280px) {
+
+
+
+  
+
+}
+
+@media only screen and (min-width: 412px) and (max-width: 914px) {
+
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 600px) {
+
+
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 800px) {
+
+
+
+
+}

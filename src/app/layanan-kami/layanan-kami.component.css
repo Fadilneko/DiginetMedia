@@ -1,0 +1,382 @@
+/* Reset margin dan padding default */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Gaya header */
+
+.header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 70px;
+    margin: 0; /* Menghapus margin default */
+}
+.header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.75px;
+    letter-spacing: 2px;
+    margin: 0; /* Menghapus margin default */
+}
+
+
+/* Gaya container */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Gaya item */
+.item {
+    display: flex;
+    align-items: center;  /* Mengatur elemen di tengah secara vertikal */
+    justify-content: center; /* Mengatur elemen di tengah secara horizontal */
+    width: 100%;
+    padding: 50px 0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f9f9f9; /* Warna latar belakang container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+.item-left {
+    flex-direction: row;
+}
+
+.item-right {
+    flex-direction: row-reverse;
+}
+
+.item h2 {
+    margin-top: 20px; /* Memberikan jarak antara gambar dan teks */
+    color: #003366; /* Warna teks judul */
+    text-align: center;
+    max-width: 300px; /* Maksimum lebar teks untuk menghindari keterlebaran */
+    word-wrap: break-word; /* Memaksa teks untuk membungkus jika terlalu panjang */
+    margin-left: 100px; /* Jarak antara teks dan gambar di sebelah kiri */
+    margin-right: 100px; /* Jarak antara teks dan gambar di sebelah kanan */
+}
+
+.item img {
+    max-width: 250px; /* Ukuran gambar diperbesar */
+}
+
+/* Kelas khusus untuk mengatur posisi tulisan ke kanan */
+.item-offset h2 {
+    margin-left: 150px; /* Sesuaikan jarak sesuai kebutuhan */
+}
+
+/* Kelas khusus untuk mengatur posisi tulisan ke kiri */
+.item-offset-left h2 {
+    margin-left: 50px; /* Sesuaikan jarak sesuai kebutuhan */
+    margin-right: 50px; /* Sesuaikan jarak sesuai kebutuhan */
+}
+
+/* Warna latar belakang khusus untuk beberapa item */
+.item-right.item-offset-left {
+    background-color: #ecf2ff;
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 600px) {
+    .item h2 {
+        max-width: 90%; /* Menyesuaikan lebar maksimum pada layar kecil */
+        margin-left: 10px; /* Mengurangi jarak gambar pada layar kecil */
+        margin-right: 10px; /* Mengurangi jarak gambar pada layar kecil */
+    }
+    .item img {
+        max-width: 200px; /* Mengurangi ukuran gambar pada layar kecil */
+    }
+    .item-offset h2, .item-offset-left h2 {
+     
+    }
+}
+
+/* Gaya baru untuk Field Range of Service */
+.field-service {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.field-service h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.field-service p {
+  
+    color: #777;
+    margin-bottom: 50px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+}
+
+.service {
+    flex: 1;
+    padding: 20px;
+    max-width: 250px;
+}
+
+.service img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.trusted {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.trusted-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trusted p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #00264D;
+    text-align: left;
+    max-width: 300px;
+    margin-right: 20px;
+    word-wrap: break-word;
+}
+
+.trusted img {
+    max-width: 100px;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
+/* Gaya baru untuk cta */
+.cta {
+   
+    background-color: #003399;
+    color: white;
+    padding: 0px 20px;
+  }
+  
+  .cta-content {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .cta img {
+    width: 32%;
+  }
+  
+  .cta-text {
+    max-width: 400px;
+  }
+  
+  .cta p {
+    font-size: 24px; /* Ukuran font sesuai gambar */
+    margin-bottom: 10%;
+  }
+  
+  .cta button {
+    background-color: white;
+    color: #003399;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .cta button:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+
+   
+     
+   }
+   
+   @media only screen and (min-width: 414px) and (max-width: 896px) {
+     
+   }
+   
+   @media only screen and (min-width: 390px) and (max-width: 884px) {
+   
+     
+   }
+   
+   @media only screen and (min-width: 360px) and (max-width: 740px) {
+   
+   
+    body {
+        width: 100vh;
+    }
+
+    .header {
+        padding-left: 5%;
+        height: auto;
+        text-align: center;
+    }
+    .header h1 {
+        font-size: 28px; /* Menyesuaikan ukuran font pada header */
+        line-height: 40px;
+    }
+    .header p {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 10px;
+    }
+
+    .item {
+      
+        padding: 15px 0;
+    }
+    .item img {
+        max-width: 180px; /* Mengurangi ukuran gambar */
+    }
+    .item h2 {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 16px; /* Menyesuaikan ukuran font pada item */
+        text-align: center;
+    }
+    .item-offset h2, .item-offset-left h2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .field-service {
+        padding: 20px 0;
+    }
+    .field-service h2 {
+        font-size: 22px; /* Menyesuaikan ukuran font pada Field Range of Service */
+    }
+    .field-service p {
+        font-size: 12px;
+    }
+    .services {
+      
+    }
+    .service {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    .service img {
+        max-width: 70px;
+    }
+
+    .trusted p {
+        font-size: 16px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .trusted img {
+        max-width: 70px;
+    }
+
+    .cta {
+        padding: 15px;
+    }
+  
+   
+  
+    .cta p {
+        font-size: 18px; /* Ukuran font pada CTA */
+    }
+    .cta button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+   
+     }
+   
+   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+    body {
+        width: 100vh;
+    }
+
+
+   }
+   
+   @media only screen and (min-width: 820px) and (max-width: 1180px) {
+   
+    body {
+        width: 68vh;
+    }
+  
+   
+     
+   }
+   
+   @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+   
+   
+    body {
+        width: 73.7vh;
+    }
+   
+   
+   }
+   
+   @media only screen and (min-width: 912px) and (max-width: 1368px) {
+   
+   
+   
+    body {
+        width: 73.7vh;
+    }
+   
+    
+   
+   }
+   
+   @media only screen and (min-width: 540px) and (max-width: 720px) {
+   
+   }
+   
+   @media only screen and (min-width: 344px) and (max-width: 882px) {
+   
+   
+    
+   }
+   
+   @media only screen and (min-width: 853px) and (max-width: 1280px) {
+   
+  
+   
+     
+   
+   }
+   
+   @media only screen and (min-width: 412px) and (max-width: 914px) {
+   
+   
+   }
+   
+   @media only screen and (min-width: 1024px) and (max-width: 600px) {
+   
+   
+   
+   }
+   
+   @media only screen and (min-width: 1280px) and (max-width: 800px) {
+   
+   
+   
+   
+   }
+  

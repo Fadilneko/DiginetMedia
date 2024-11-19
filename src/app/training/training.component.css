@@ -1,0 +1,271 @@
+/* Pastikan Anda sudah memuat font Poppins dari Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.training-container {
+    width: 100%;
+}
+
+.training-title {
+  
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    height: 620px; /* Atur tinggi elemen sesuai kebutuhan untuk memastikan gambar terlihat */
+    position: relative; /* Agar gambar latar dapat diposisikan dengan baik */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Menempatkan teks di tengah secara vertikal */
+    margin-bottom: 100px;
+}
+
+.training-title img {
+    position: absolute; /* Posisi gambar agar dapat menutupi area sesuai kebutuhan */
+    top: 0;
+    left: 0;
+    width: 100%; /* Mengatur lebar gambar sesuai dengan lebar kontainer */
+    height: 130%; /* Mengatur tinggi gambar sesuai dengan tinggi kontainer */
+    object-fit: cover; /* Memastikan gambar menutupi seluruh area tanpa merusak rasio aspek */
+    z-index: -1; /* Menempatkan gambar di belakang konten lainnya */
+}
+
+.training-title h1 {
+    font-family: 'Poppins', sans-serif; /* Pastikan Anda sudah memuat font Poppins */
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px; /* Mengatur line-height sesuai ukuran font */
+    text-align: center;
+    color: white; /* Menambahkan warna putih jika diinginkan */
+}
+
+.training-title h2 {
+    font-family: 'Poppins', sans-serif; /* Pastikan Anda sudah memuat font Poppins */
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: white; /* Menambahkan warna putih jika diinginkan */
+}
+
+.training-title .description {
+    font-family: 'Poppins', sans-serif; /* Pastikan Anda sudah memuat font Poppins */
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 31.6px;
+    text-align: center;
+    color: white; /* Mengatur warna teks menjadi putih */
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.training-content {
+    display: flex;
+    justify-content: center; /* Menyelaraskan item di tengah secara horizontal */
+    flex-wrap: wrap; /* Mengizinkan item untuk membungkus jika diperlukan */
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.training-item {
+    max-width: 350px; /* Menyesuaikan lebar item untuk lebih banyak ruang jika perlu */
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; /* Menambahkan jarak di sekitar item */
+}
+
+/* Kelas umum untuk gambar ikon */
+.training-icon {
+    width: 80%; /* Ukuran default untuk gambar ikon */
+    height: auto;
+    margin-bottom: 10px; /* Mengatur jarak bawah dari gambar ikon */
+}
+
+/* Kelas khusus untuk gambar dengan informasi pengetahuan */
+.knowledge-icon {
+    width: 90%; /* Ukuran khusus untuk gambar knowledge */
+    margin-top: 75px;
+    margin-bottom: 15px;
+}
+
+/* Kelas khusus untuk garis dengan informasi pengetahuan */
+.knowledge-line {
+    width: 90%; /* Lebar khusus untuk garis knowledge */
+}
+
+/* Kelas khusus untuk gambar dengan informasi sistem */
+.system-icon {
+    width: 80%; /* Ukuran khusus untuk gambar sistem */
+    margin-top: -30px;
+}
+
+/* Kelas khusus untuk garis dengan informasi sistem */
+.system-line {
+    width: 85%; /* Lebar khusus untuk garis sistem */
+}
+
+/* Kelas lain tetap sama */
+.line {
+    width: 80%; /* Default lebar garis */
+    margin: 10px 0; /* Menambahkan jarak di atas dan bawah */
+}
+/* Media query untuk layar dengan lebar maksimal 768px */
+
+
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+
+   
+     
+}
+
+@media only screen and (min-width: 414px) and (max-width: 896px) {
+  
+}
+
+@media only screen and (min-width: 390px) and (max-width: 884px) {
+
+  
+}
+
+@media only screen and (min-width: 360px) and (max-width: 740px) {
+
+
+ body {
+     width: 100vh;
+ }
+
+
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+ body {
+     width: 100vh;
+ }
+
+ .training-title h1 {
+    font-size: 48px; /* Mengurangi ukuran font pada layar kecil */
+    line-height: 56px;
+}
+
+.training-title h2 {
+    font-size: 20px; /* Mengurangi ukuran font pada layar kecil */
+  
+}
+
+.training-title .description {
+    font-size: 16px; /* Mengurangi ukuran font pada layar kecil */
+  
+}
+
+.training-item {
+    max-width: 90%; /* Memastikan item tidak terlalu lebar pada layar kecil */
+    margin: 10px 0; /* Menambahkan jarak di sekitar item */
+}
+
+.training-content {
+    padding: 20px; /* Mengurangi padding untuk layar kecil */
+}
+
+/* Mengatur ukuran gambar untuk tampilan responsif */
+.training-title img {
+    height: 96%; /* Mengurangi tinggi gambar untuk layar kecil */
+}
+
+.training-icon {
+    width: 30%; /* Mengurangi ukuran gambar ikon pada layar kecil */
+}
+
+.knowledge-icon, .system-icon {
+    width: 60%; /* Mengurangi ukuran gambar pada bagian knowledge dan sistem */
+    margin-top: 20px; /* Mengurangi margin-top untuk ukuran yang lebih kecil */
+}
+
+.knowledge-line, .system-line {
+    width: 80%; /* Mengurangi lebar garis untuk ukuran layar kecil */
+}
+
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+
+ body {
+     width: 68vh;
+ }
+
+ .training-title img {
+    height: 80%; /* Mengurangi tinggi gambar untuk layar kecil */
+}
+
+  
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+
+ body {
+     width: 73.7vh;
+ }
+
+ .training-container {
+   
+ }
+
+}
+
+@media only screen and (min-width: 912px) and (max-width: 1368px) {
+
+
+
+ body {
+     width: 73.7vh;
+ }
+
+ 
+
+}
+
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+
+}
+
+@media only screen and (min-width: 344px) and (max-width: 882px) {
+
+
+ 
+}
+
+@media only screen and (min-width: 853px) and (max-width: 1280px) {
+
+
+
+  
+
+}
+
+@media only screen and (min-width: 412px) and (max-width: 914px) {
+
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 600px) {
+
+
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 800px) {
+
+
+
+
+}

@@ -1,0 +1,163 @@
+.mainheader {
+  background: #0044b4;
+  height: 100px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 1px 1px 3px 1px darkblue;
+}
+
+.img1 {
+  width: 200px; 
+  height: 66.6px
+}
+
+.row {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+
+.navigation {
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+
+.btn {
+  width: 8%;
+  padding: 10px;
+  height: 40px;
+  background-color: #0044B4;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+
+
+
+mat-icon {
+  color: white;
+}
+
+@media only screen and (min-width: 835px) {
+
+  
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+  
+  .img1 {
+   margin-top: 3%;
+   
+  }
+
+  .navigation {
+    margin: 0 auto;
+    display: flex;
+   
+    text-align: center;
+   
+  }
+
+  a {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+  .btn {
+    margin-top: 4%;
+    width: 16%;
+    background-color: #0044B4;
+    border: 1px solid white;
+    border-radius: 4px;
+  
+    padding: 10px;
+  }
+
+  .menu-item {
+    display: flex;
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 0%;
+    
+  
+  }
+  
+  
+  
+  .menu-item0 {
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+    margin-left: 0%;
+    margin-right: 2%;
+  }
+  
+  .menu-item1 {
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    margin-left: 0%;
+  }
+  
+  .menu-item2 {
+    margin-top: 4%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+  
+  }
+
+  .arrow-down {
+    
+    transition: transform 0.3s ease;
+  }
+  
+  .rotate-icon {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+ 
+}
+
+/* Media Query for Samsung Galaxy S8++ */
+/* Media Query untuk Samsung Galaxy S8++ */
+@media only screen and (max-width: 360px) {
+
+ 
+
+  .mainheader {
+    width: 100vh;
+  }
+
+  .row {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 42%;
+    justify-content: space-around;
+  }
+
+  .img1 {
+    width: 200px; /* Kurangi ukuran logo */
+    height: 60.6px;
+ 
+  }
+
+  .btn-login {
+    margin-right: 4%;
+  }
+
+  mat-icon {
+    font-size: 18px; /* Atur ulang ukuran icon */
+  }
+}

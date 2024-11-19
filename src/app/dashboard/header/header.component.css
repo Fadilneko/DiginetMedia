@@ -1,0 +1,544 @@
+.mainheader {
+ 
+  height: 100px;
+  position: -webkit-sticky;
+  box-shadow: 5px 1px 10px 1px darkblue;
+}
+
+.img1 {
+  width: 200px; 
+  height: 66.6px
+}
+
+.navigation {
+  margin: 0 auto;
+}
+
+
+.submenu {
+
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: visibility 0s linear 0.4s, opacity 0.4s linear; /* Add transition */
+}
+
+
+.menu-item:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; /* Show immediately on hover */
+}
+
+.menu-item:hover .submenu,
+.submenu:hover {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; /* Maintain visibility when hovering submenu */
+}
+
+.submenu:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-item2:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; /* Show immediately on hover */
+}
+
+.menu-item2:hover .submenu,
+.submenu:hover {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; /* Maintain visibility when hovering submenu */
+}
+
+.submenu:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.column {
+
+
+}
+
+.column button {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 20px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(174, 221, 252, 0.5) 100%);
+  
+}
+
+
+
+.column button:hover {
+  color: blue;
+}
+
+a {
+  font-size: 16px;
+  text-align: center;
+ 
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  transition: 0.4s;
+}
+
+.btn {
+  background-color: #ffd426;
+  border: 1px solid white;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.btn:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+.navigation a:hover {
+  transform: translateY(-5px);
+}
+
+.dropdown-icon mat-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+rotate-icon {
+  transform: rotate(180deg);
+}
+
+.menu-item:hover .dropdown-icon mat-icon,
+.menu-item .submenu.show + .dropdown-icon mat-icon {
+  transform: rotate(180deg);
+}
+
+.menu-item2:hover .dropdown-icon mat-icon,
+.menu-item2 .submenu.show + .dropdown-icon mat-icon {
+  transform: rotate(180deg);
+}
+
+
+mat-icon {
+  color: white;
+}
+
+@media only screen and (min-width: 835px) {
+
+  
+  
+}
+
+
+
+
+
+
+@media only screen and (max-width: 820px) { 
+
+  .mainheader {
+ 
+  }
+
+  .row {
+    padding-left: 1rem;
+    padding-right: 1rem;
+ 
+   
+   
+  }
+
+  .img1 {
+    width: 80px; /* Kurangi ukuran logo */
+    height: 26.6px;
+    margin-right: 2%;
+  }
+
+  .navigation {
+
+    font-size: 12px;
+    display: flex;
+   
+    align-items: center;
+    
+  }
+
+  .menu-item0,
+  .menu-item1,
+  .menu-item2 {
+  
+    font-size: 10px;
+   
+    justify-content: center;
+  }
+
+  .submenu {
+   
+   
+    width: 100%;
+    text-align: center;
+  
+   
+  }
+
+  .submenu .column {
+    width: 40%; /* Pastikan kolom submenu mengambil lebar penuh pada layar kecil */
+    margin-bottom: 10px; /* Tambahkan margin bawah untuk memberikan jarak antara kolom */
+  }
+
+  .btn {
+    margin-top: 2%;
+    font-size: 12px;
+    padding: 8px 10px;
+ 
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  a {
+    font-size: 12px; /* Atur ulang ukuran font agar sesuai dengan layar kecil */
+  }
+
+  mat-icon {
+    font-size: 18px; /* Atur ulang ukuran icon */
+  }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+
+  body {
+    width: 100vh;
+  } 
+
+  
+}
+
+@media only screen and (min-width: 414px) and (max-width: 896px) {
+  body {
+    width: 100vh;
+  } 
+
+
+}
+
+@media only screen and (min-width: 390px) and (max-width: 884px) {
+
+
+ 
+}
+
+@media only screen and (min-width: 430px) and (max-width: 932px) {
+
+}
+
+@media only screen and (min-width: 412px) and (max-width: 915px) {
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 740px) {
+
+  
+  .mainheader {
+    width: 100vh;
+  }
+
+  .row {
+    padding-left: 1rem;
+    padding-right: 1rem;
+ 
+   
+   
+  }
+
+  .img1 {
+    width: 80px; /* Kurangi ukuran logo */
+    height: 26.6px;
+    margin-right: 2%;
+  }
+
+  .navigation {
+
+    font-size: 12px;
+    display: flex;
+   
+    align-items: center;
+    
+  }
+
+  .menu-item0,
+  .menu-item1,
+  .menu-item2 {
+  
+    font-size: 10px;
+   
+    justify-content: center;
+  }
+
+  .submenu {
+   
+   
+    width: 100%;
+    text-align: center;
+  
+   
+  }
+
+  .submenu .column {
+    width: 40%; /* Pastikan kolom submenu mengambil lebar penuh pada layar kecil */
+    margin-bottom: 10px; /* Tambahkan margin bawah untuk memberikan jarak antara kolom */
+  }
+
+  .btn {
+    margin-top: 2%;
+    font-size: 12px;
+    padding: 8px 10px;
+ 
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  a {
+    font-size: 12px; /* Atur ulang ukuran font agar sesuai dengan layar kecil */
+  }
+
+  mat-icon {
+    font-size: 18px; /* Atur ulang ukuran icon */
+  }
+ 
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .mainheader {
+    width: 100vh;
+  }
+
+  .submenu {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    transition: none;
+  }
+
+  /* Tampilkan submenu jika ada kelas "show" */
+  .submenu.show {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+  }
+
+.dropdown-icon {
+  pointer-events: auto; /* Pastikan ikon panah dapat diklik */
+}
+  
+
+  .img1 {
+    width: 100px;
+    height: 33px;
+    
+    margin-right: 2%;
+  }
+
+  .navigation {
+    margin: 0 auto;
+    display: flex;
+   
+    text-align: center;
+   
+  }
+
+  a {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+  .column {
+
+  }
+
+  .column img {
+    width: 40%;
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
+
+
+  .btn {
+    margin-top: 4%;
+    background-color: #ffcc00;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-left: 8%;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .menu-item {
+    display: flex;
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 0%;
+    
+  
+  }
+  
+  
+  
+  .menu-item0 {
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+    margin-left: 0%;
+    margin-right: 2%;
+  }
+  
+  .menu-item1 {
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    margin-left: 0%;
+  }
+  
+  .menu-item2 {
+    margin-top: 4%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+  
+  }
+
+  .arrow-down {
+    
+    transition: transform 0.3s ease;
+  }
+  
+  .rotate-icon {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+ 
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+
+  .mainheader {
+    width: 67.8vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+  .mainheader {
+    padding: 0;
+    background-color: none;
+    box-shadow: none;
+  }
+
+  .row {
+    background-color: #0044b4;
+    height: 100px;
+    width: 73.7vh;
+    padding-top: 0;
+    margin-top: 0;
+    box-shadow: 5px 1px 10px 1px darkblue;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 912px) and (max-width: 1368px) {
+
+
+  .mainheader {
+    padding: 0;
+    background-color: none;
+    box-shadow: none;
+  }
+
+  .row {
+    background-color: #0044b4;
+    height: 100px;
+    width: 73.7vh;
+    padding-top: 0;
+    margin-top: 0;
+    box-shadow: 5px 1px 10px 1px darkblue;
+  }
+
+  .submenu {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    transition: none;
+    width: 73.7vh;
+  }
+
+  /* Tampilkan submenu jika ada kelas "show" */
+  .submenu.show {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+  }
+
+}
+
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+
+}
+
+@media only screen and (min-width: 344px) and (max-width: 882px) {
+
+
+}
+
+@media only screen and (min-width: 853px) and (max-width: 1280px) {
+
+  .mainheader {
+    width: 65vh;
+  }
+
+}
+
+@media only screen and (min-width: 412px) and (max-width: 914px) {
+
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 600px) {
+
+
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 800px) {
+
+.mainheader {
+  width: 100vh;
+  background-color: black;
+}
+
+
+
+
+}
+

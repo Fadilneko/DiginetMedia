@@ -1,0 +1,49 @@
+<body>
+    
+
+
+<mat-card-content class="card mb-96 ">
+
+    <div class=" text-center  bg-cover bg-center text-white py-24 px-8" style="background-image: url('assets/produk.png');">
+      
+        <p class="text-5xl font-medium text-white">Produk</p>
+       
+    </div>
+    
+
+    
+
+    <div class="tentang2 ">
+        <div class="display">
+          <div *ngFor="let produk of produkLainnya" class="isi flex flex-col justify-between border p-2 text-center">
+            <div class="rounded bg-cyan-500">
+              <img [src]="produk.gambar" width="100%">
+            </div><br>
+      
+            <p><strong>{{ produk.judul }}</strong></p>
+            <p class="rounded">{{ produk.deskripsi }}</p>
+            <button mat-button [routerLink]="['/detail-gis', produk.id]" class="btnselengkapnya" style="color: white;">
+              Info Selengkapnya
+            </button>
+          </div>
+        </div>
+      </div>
+      
+ 
+
+</mat-card-content>
+
+
+
+<div class="cta mt-96">
+    <div class="cta-content">
+        <img src="assets/cs.png" alt="Customer Support">
+        <div class="cta-text">
+            <p>Butuh Software Manajemen Untuk Bisnis Anda? Kami siap membantu.</p>
+            <button [routerLink]="['/hubungi-kami']" mat-button>Hubungi Kami</button>
+        </div>
+    </div>
+</div>
+
+
+</body>

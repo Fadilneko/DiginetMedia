@@ -1,0 +1,51 @@
+<div class="bg-white p-8 rounded-lg shadow-md w-full max-w-3xl">
+    <h1 class="text-center text-2xl font-bold mb-6">{{ isEditMode ? 'Edit Identitas Kantor' : 'Tambah Identitas Kantor' }}</h1>
+    <form [formGroup]="form">
+        <div class="grid grid-cols-2 gap-6 mb-4">
+            <div>
+                <label class="block mb-2 font-semibold">Nama Kantor:</label>
+                <input type="text" class="w-full border border-gray-300 p-2 rounded" placeholder="Nama Kantor" formControlName="kantor">
+            </div>
+            <div>
+                <label class="block mb-2 font-semibold">Alamat:</label>
+                <input type="text" class="w-full border border-gray-300 p-2 rounded" placeholder="Alamat" formControlName="alamat">
+            </div>
+            <div>
+                <label class="block mb-2 font-semibold">Logo Kantor:</label>
+                <label for="logo-upload" class="block w-full border border-gray-300 p-2 rounded text-center cursor-pointer">Pilih Logo</label>
+                <input id="logo-upload" type="file" class="hidden" (change)="onLogoSelected($event)">
+                <div *ngIf="logoPreview" class="mt-2">
+                    <img [src]="logoPreview" alt="Logo Preview" class="w-32 h-32 object-cover">
+                </div>
+            </div>
+            <div>
+                <label class="block mb-2 font-semibold">Foto Kantor:</label>
+                <label for="foto-upload" class="block w-full border border-gray-300 p-2 rounded text-center cursor-pointer">Pilih Foto Kantor</label>
+                <input id="foto-upload" type="file" class="hidden" (change)="onFotoKantorSelected($event)">
+                <div *ngIf="fotoKantorPreview" class="mt-2">
+                    <img [src]="fotoKantorPreview" alt="Foto Kantor Preview" class="w-32 h-32 object-cover">
+                </div>
+            </div>
+            <div>
+                <label class="block mb-2 font-semibold">Kategori:</label>
+                <input type="text" class="w-full border border-gray-300 p-2 rounded" placeholder="Kategori" formControlName="kategori">
+            </div>
+            <div>
+                <label class="block mb-2 font-semibold">Map Kantor:</label>
+                <label for="gmaps-upload" class="block w-full border border-gray-300 p-2 rounded text-center cursor-pointer">Pilih Gambar Map</label>
+                <input id="gmaps-upload" type="file" class="hidden" (change)="onGmapsSelected($event)">
+                <div *ngIf="gmapsPreview" class="mt-2">
+                    <img [src]="gmapsPreview" alt="Map Preview" class="w-32 h-32 object-cover">
+                </div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label class="block mb-2 font-semibold">Deskripsi:</label>
+            <textarea class="w-full border border-gray-300 p-2 rounded h-32" placeholder="Deskripsi" rows="5" formControlName="deskripsi"></textarea>
+        </div>
+        <div class="flex justify-end space-x-4">
+            <button type="button" class="bg-red-500 text-white px-4 py-2 rounded" (click)="onCancel()">Kembali</button>
+            <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded" (click)="onSave()">{{ isEditMode ? 'Perbarui' : 'Simpan' }}</button>
+        </div>
+    </form>
+</div>

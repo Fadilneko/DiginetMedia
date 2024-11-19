@@ -1,0 +1,144 @@
+.card {
+  box-shadow: none;
+  background-color: rgb(239, 245, 248);
+  padding: 4rem;
+  z-index: 1;
+}
+
+.content {
+}
+
+.content h1 {
+  margin-left: 10%;
+  font-weight: 500;
+}
+
+.p0 {
+  margin-left: 10%;
+  margin-bottom: 3%;
+}
+
+.absolute {
+  height: auto;
+
+}
+
+.garis {
+  margin-left: 10%;
+  height: 3px;
+  width: 7%;
+  background-color: #0044B4;
+  margin-bottom: 2%;
+}
+
+.form1 {
+  width: 100%;
+  max-width: 600px; /* Maximum width for larger screens */
+  background-color: white;
+  padding: 4rem;
+  box-shadow: 0px 0px 120px 0px #00000014;
+  border-radius: 4px;
+  margin: auto; /* Center the form */
+}
+
+.form1 h2 {
+  font-weight: 500;
+}
+
+.display0 {
+  display: flex;
+  gap: 4%;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.textarea {
+  width: 100%; /* Full width for textarea */
+}
+
+.kirim {
+  box-shadow: 0px 5px 5px 0px #4285F44D;
+  background: #0044B4;
+  color: white;
+}
+
+.kirim:hover {
+  background-color: black;
+  transition: 0.6s ;
+  
+}
+
+.form2 {
+  width: 100%;
+  max-width: 600px; /* Maximum width for larger screens */
+  margin: auto; /* Center the form */
+  padding: 4rem;
+  box-shadow: 0px 0px 120px 0px #00000014;
+  background-color: white;
+  border-radius: 4px;
+  margin-top: 2rem; /* Space from form1 */
+}
+
+.form2 h2 {
+  text-align: center; /* Center align for form2 title */
+}
+
+.margin {
+  margin-top: 5%;
+}
+
+.contact-details, .contact-details2, .contact-details3 {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex: 1 1 45%; /* Flex-basis for responsiveness */
+}
+
+.contact-item mat-icon {
+  font-size: 24px; /* Adjust icon size */
+  margin-right: 15px;
+  color: #007bff;
+}
+
+.contact-item div {
+  line-height: 1.6;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 740px) {
+   
+   
+  body {
+      width: 100vh;
+  }
+
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .display0 {
+    flex-direction: column; /* Stack the inputs on smaller screens */
+  }
+
+  .form1, .form2 {
+    padding: 2rem; /* Less padding on smaller screens */
+  }
+  
+  .form1, .form2 {
+    width: 90%; /* Full width on smaller screens */
+  }
+
+  .contact-details, .contact-details2, .contact-details3 {
+    flex-direction: column; /* Stack contact items on smaller screens */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .contact-item {
+    flex: 1 1 100%; /* Full width for contact items */
+  }
+}

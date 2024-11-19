@@ -1,0 +1,90 @@
+<mat-sidenav-container class="sidenav-container" >
+  <mat-sidenav #sidenav mode="over" class="sidenav">
+    <mat-nav-list>
+      <div class="menu-item1">
+        <button [routerLink]="['/beranda']" class="main-menu" (click)="closeSidenav()">
+          <mat-icon>home</mat-icon> BERANDA
+        </button>
+      </div>
+
+      <div class="menu-item1">
+        <button [routerLink]="['/layanan-kami']" class="main-menu" (click)="closeSidenav()">
+          <mat-icon>star</mat-icon> LAYANAN
+        </button>
+        <!-- <button mat-icon-button class="submenu-toggle" (click)="toggleSubMenu('layanan')">
+          <mat-icon [ngClass]="{'arrow-up': isSubMenuOpen('layanan'), 'arrow-down': !isSubMenuOpen('layanan')}">arrow_drop_down</mat-icon>
+        </button> -->
+      </div>
+<!-- 
+      <div class="sub-menu">
+        <div class="column">
+          <button [routerLink]="['/training']" *ngIf="isSubMenuOpen('layanan')" class="submenu" (click)="closeSidenav()">
+            <mat-icon>school</mat-icon> Training
+          </button>
+        </div>
+      </div> -->
+
+      <div class="menu-item1">
+        <button [routerLink]="['/produk']" class="main-menu" (click)="closeSidenav()">
+          <mat-icon>shopping_cart</mat-icon> PRODUK
+        </button>
+        <!-- <button mat-icon-button class="submenu-toggle" (click)="toggleSubMenu('produk')">
+          <mat-icon [ngClass]="{'arrow-up': isSubMenuOpen('produk'), 'arrow-down': !isSubMenuOpen('produk')}">arrow_drop_down</mat-icon>
+        </button> -->
+      </div>
+<!-- 
+      <div class="sub-menu">
+        <div class="column">
+          <button [routerLink]="['/hubungi-kami']" *ngIf="isSubMenuOpen('produk')" class="submenu" (click)="closeSidenav()">
+            <mat-icon class="menu-icon">phone</mat-icon> Hubungi Kami
+          </button>
+        </div>
+      </div> -->
+
+      <div class="menu-item2">
+        <button [routerLink]="['/profil']" class="main-menu" (click)="closeSidenav()">
+          <mat-icon>person</mat-icon> PROFIL
+        </button>
+      </div>
+
+      <div class="menu-item3">
+        <button [routerLink]="['/blog']" class="main-menu" (click)="closeSidenav()">
+          <mat-icon>article</mat-icon> BLOG
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <button [routerLink]="['/lain-lain']" class="main-menu"(click)="closeSidenav()">
+          <mat-icon>more_horiz</mat-icon> LAIN-LAIN
+        </button>
+        <button mat-icon-button class="submenu-toggle" (click)="toggleSubMenu('lainLain')">
+          <mat-icon [ngClass]="{'arrow-up': isSubMenuOpen('lainLain'), 'arrow-down': !isSubMenuOpen('lainLain')}">arrow_drop_down</mat-icon>
+        </button>
+      </div>
+
+      <div class="sub-menu">
+        <div class="column">
+          <button [routerLink]="['/training']" *ngIf="isSubMenuOpen('lainLain')" class="submenu" (click)="closeSidenav()">
+            <mat-icon>school</mat-icon> Training
+          </button>
+          <button [routerLink]="['/hubungi-kami']" *ngIf="isSubMenuOpen('lainLain')" class="submenu1" (click)="closeSidenav()">
+            <mat-icon class="menu-icon">phone</mat-icon> Hubungi Kami
+          </button>
+          <button [routerLink]="['/teknologi']" *ngIf="isSubMenuOpen('lainLain')" class="submenu1" (click)="closeSidenav()">
+            <mat-icon>work</mat-icon> Teknologi
+          </button>
+        </div>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-toolbar class="mainheader">
+    <mat-toolbar-row class="row">
+      <img class="img1" src="assets/digimedia.png" alt="My App Logo" />
+      <span class="spacer"></span>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</mat-sidenav-container>

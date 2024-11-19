@@ -1,0 +1,136 @@
+/* Kontainer umum */
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .judul {
+    text-align: center;
+  }
+  
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .col {
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .half-width {
+    width: 48%; /* Mengatur lebar setengah dari kontainer */
+  }
+  
+  .mat-form-field {
+    width: 70%;
+  }
+  
+  input[type="file"] {
+    display: none; /* Sembunyikan input file standar */
+  }
+  
+  .custom-file-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #0044B4;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-file-input img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .custom-file-input label {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .custom-file-input:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Button styling */
+  .btn {
+    display: flex;
+    justify-content: right;
+    margin-right: 2%;
+    gap: 3%;
+  }
+  
+  /* Tombol simpan disabled */
+  .btn-disabled {
+    background-color: #ddd;
+    color: #9e9e9e;
+    cursor: not-allowed;
+  }
+  
+  /* Tombol simpan enabled */
+  .btn-enabled {
+    background-color: #3f51b5;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn-batal {
+    background-color: #e12323;
+    padding: 8px 16px;
+    width: 13%;
+  }
+  
+  button[mat-button] {
+    padding: 8px 16px;
+  }
+  
+  /* Tombol di dialog */
+  button {
+    cursor: pointer;
+  }
+
+  .image-preview img {
+    margin-top: 10px;
+    width: 50px; /* Sesuaikan ukuran preview gambar */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  
+  /* Responsif pada layar lebih kecil */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  
+    .half-width {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .button-row {
+      justify-content: center;
+    }
+  }
+  

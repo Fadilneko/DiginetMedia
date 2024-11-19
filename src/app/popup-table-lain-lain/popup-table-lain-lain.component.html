@@ -1,0 +1,42 @@
+<h1 class="judul">{{ isEditMode ? 'Edit' : 'Tambah' }} Data</h1>
+
+<div mat-dialog-content>
+  <form [formGroup]="form">
+    <div class="display">
+   
+    <mat-form-field >
+      <mat-label>Judul</mat-label>
+      <input matInput formControlName="judul">
+    </mat-form-field>
+
+    </div>
+
+
+    <div class="display">
+
+    <mat-form-field >
+      <mat-label>Deskripsi</mat-label>
+      <input matInput formControlName="deskripsi">
+    </mat-form-field>
+
+   
+    <mat-form-field >
+        <mat-label>Kategori</mat-label>
+        <input matInput formControlName="kategori">
+      </mat-form-field>
+
+    </div>
+
+  </form>
+</div>
+
+<div class="btn">
+  <button mat-button style="color: white;" class="btn-batal" (click)="onCancel()">Batal</button>
+  <button 
+    mat-button 
+    [disabled]="!form.valid"
+    (click)="onSave()"
+    [ngClass]="{'btn-disabled': !form.valid, 'btn-enabled': form.valid}">
+    Simpan
+  </button>
+</div>

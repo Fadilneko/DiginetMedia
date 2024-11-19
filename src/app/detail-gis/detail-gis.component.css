@@ -1,0 +1,410 @@
+
+
+
+.content h1 {
+  color: #00264d;
+}
+
+
+
+.column0 {
+  max-width: 880px;
+}
+
+.absolute0 {
+}
+
+
+
+.p0 {
+  color: #00264d;
+}
+
+.p1 {
+  font-size: 16px;
+  color: black;
+}
+
+.garis {
+  height: 1px;
+  background-color: #ddd;
+}
+
+.container2 {
+
+  background-color: rgb(241, 249, 255);
+
+}
+
+.wrapper h1 {
+  text-align: center;
+  color: #00264d;
+}
+
+.cta {
+  background-color: #003399;
+  color: white;
+  padding: 0px 20px;
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+}
+
+.cta img {
+  width: 32%;
+}
+
+.cta-text {
+  max-width: 400px;
+}
+
+.cta p {
+  line-height: 1.5;
+  font-size: 24px; /* Ukuran font sesuai gambar */
+  margin-bottom: 10%;
+}
+
+.cta button {
+  background-color: white;
+  color: #003399;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.cta button:hover {
+  background-color: #ddd;
+}
+
+.check-icon {
+  color: #003399;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+
+.swiper-slide {
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.8) rotateY(-30deg); /* Miring ke kiri */
+}
+
+.swiper-slide-next:not(.swiper-slide-active) {
+  transform: scale(0.8) rotateY(-30deg); /* Miring ke kanan */
+}
+
+.swiper-slide-prev:not(.swiper-slide-active) {
+  transform: scale(0.8) rotateY(-30deg); /* Miring ke kiri */
+}
+
+.swiper-slide-active {
+  transform: scale(1) rotateY(0deg); /* Tidak ada rotasi pada slide aktif */
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.news-slider {
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  gap: 1%;
+  margin-top: 60px;
+}
+
+.news-slider__wrp {
+  display: flex;
+
+  z-index: 2;
+}
+
+.news-slider__item {
+  width: 400px;
+  flex-shrink: 0;
+}
+
+.news-slider__item.swiper-slide {
+
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.news-slider__item.swiper-slide-active,
+.news-slider__item.swiper-slide-prev,
+.news-slider__item.swiper-slide-next {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.news-slider__arrow {
+  background: #fff;
+  border: none;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 12;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.news-slider__arrow:focus {
+  outline: none !important;
+}
+
+.news-slider__arrow.news-slider-prev {
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.news-slider__arrow.news-slider-next {
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.news-slider__pagination {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 10px;
+  display: inline-block;
+  background: #fff;
+  opacity: 0.2;
+  margin: 0 5px;
+  border-radius: 20px;
+  transition: opacity 0.5s, background-color 0.5s, width 0.5s;
+}
+
+.swiper-pagination-bullet-active {
+  width: 24px;
+  opacity: 1;
+}
+
+.news__item {
+  display: block;
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 20px;
+  box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.news__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.laptop-image {
+  position: absolute;
+  left: 33%;
+  top: 28.8%;
+  width: 33.8%; 
+  height: 62%;
+  z-index: 10;
+  background: transparent;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+}
+
+@media only screen and (min-width: 414px) and (max-width: 896px) {
+  .laptop-image {
+    width: 50%;
+    left: 15%;
+  }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 884px) {
+}
+
+@media only screen and (min-width: 360px) and (max-width: 740px) {
+  .card {
+    width: 100vh;
+  }
+
+  .laptop-image {
+    width: 70%;
+    left: 15%;
+  }
+
+  .display,
+  .cta-text,
+  .content p {
+    text-align: left; /* Mengatur semua teks agar rata kiri */
+  }
+  .container {
+    padding: 2rem;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .display0 {
+    flex-direction: column-reverse; /* Mengubah urutan elemen dalam flexbox */
+  }
+
+  .absolute0 {
+    margin-top: 4%;
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
+    margin-bottom: 20px;
+    order: 1; /* Menempatkan gambar di atas */
+  }
+
+  .column0 {
+  }
+
+  .column0 h1 {
+    text-align: center;
+  }
+
+  .cta {
+    padding: 15px;
+  }
+
+  .cta p {
+    font-size: 18px; /* Ukuran font pada CTA */
+  }
+  .cta button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: 100vh;
+  }
+
+  .column0,
+  .display,
+  .cta-text,
+  .content p {
+    text-align: left; /* Mengatur semua teks agar rata kiri */
+  }
+  .container {
+    padding: 2rem;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .display0 {
+    flex-direction: column-reverse; /* Mengubah urutan elemen dalam flexbox */
+    align-items: center;
+  }
+
+  .absolute0 {
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    order: 1; /* Menempatkan gambar di atas */
+  }
+
+  .column0 {
+    text-align: center;
+  }
+
+  .container2 {
+    width: 100vh;
+  }
+
+  .laptop-image {
+    width: 50%;
+    left: 25%;
+  }
+
+  .cta {
+    width: 100vh;
+    margin-top: 17%;
+    background-color: #003399;
+    color: white;
+    padding: 0px 20px;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+  body {
+    width: 68vh;
+  }
+
+  .laptop-image {
+    width: 64%;
+    left: 18%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  body {
+    width: 73.7vh;
+  }
+
+  .laptop-image {
+    width: 50%;
+    left: 25%;
+  }
+}
+
+@media only screen and (min-width: 912px) and (max-width: 1368px) {
+  body {
+    width: 73.7vh;
+  }
+
+  .laptop-image {
+    width: 50%;
+    left: 25%;
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+}
+
+@media only screen and (min-width: 344px) and (max-width: 882px) {
+}
+
+@media only screen and (min-width: 853px) and (max-width: 1280px) {
+}
+
+@media only screen and (min-width: 412px) and (max-width: 914px) {
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 800px) {
+}

@@ -1,0 +1,210 @@
+<body>
+    <section >
+    
+    
+       
+    
+        
+    
+    
+    
+        <mat-card class= "card">
+    
+           
+    
+           
+            <div class=" flex justify-between">
+    
+            <div class="judul flex-col text-left text-white  p-28 mt-20  " >
+    
+                <p class="h1 text-5xl font-medium">{{ kantorPusat?.kantor}}</p>  <!-- Nama kantor -->
+                <p class="pp font-medium max-w-[500px] text-xl">{{ kantorPusat?.deskripsi }}</p>  <!-- Deskripsi kantor -->
+                <button   class="btn " mat-button [routerLink]="['/hubungi-kami']">Konsultasi Sekarang</button>
+    
+            </div>
+    
+         
+              <img class="mt-4 gambar" [src]="kantorPusat?.foto_kantor" width="50%"  alt="Foto Kantor">
+
+    
+            </div>
+           
+    
+           
+    
+       
+       
+    
+        </mat-card>
+    
+    
+    
+    </section>
+    
+    
+    <section id="section1">
+    
+        <div class="mt-20">
+    
+            <div class="column flex m-28 ml-24">
+              <div class="gedung w-3/6">
+                <img class="mt-4 gambar w-full" [src]="gedung?.foto_kantor" >
+              </div>
+    
+                <div class="mt-4 ml-12">
+                    <p class="h1 text-5xl font-medium">{{ kantorPusat?.kantor}}</p>  <!-- Nama kantor -->
+    
+                    <p class="p1">Solusi terbaik kebutuhan teknologi informasi dan telekomunikasi</p>
+                     <p class="p1">untuk bisnis anda.</p><br>
+                     <p class="p2 max-w-[600px]">{{ gedung?.deskripsi }}</p>
+                    <div class="">
+                    <button mat-button [routerLink]="['/profil']" class="btn1">Profil Diginet Media</button>
+                    </div>
+                    
+                </div>
+    
+    
+    
+            </div>
+    
+        </div>
+    
+     
+    </section>
+    
+    <section  >
+    
+        <div>
+    
+        <p class="text-center font-medium text-3xl text-sky-900">{{produkunggulanjudul?.judul}}</p>
+        <p class="text-center text-sky-900">{{produkunggulanjudul?.deskripsi}}</p>
+    
+        <div class="flex justify-center my-20">
+    
+        <div class="display">
+    
+         
+    
+            <div *ngFor="let produkunggulan of produkunggulan" class="isi flex flex-col justify-between border p-2 text-center">
+                <div class="rounded bg-cyan-500">
+                <img [src]="produkunggulan.gambar" width="100%">
+                </div><br>
+    
+                <p ><strong>{{produkunggulan.judul}}</strong></p>
+    
+                <p class="rounded">{{produkunggulan.deskripsi}}</p>
+    
+                <button mat-button [routerLink]="['/detail-gis', produkunggulan.id]" class="btnselengkapnya" style="color: white;" >Info Selengkapnya</button>
+    
+            </div>
+       
+    
+        </div>
+    
+    </div>
+    
+        </div>
+    
+    </section>
+    
+    <section  >
+    
+        <div class="tentang2" >
+    
+        <p class="text-center font-medium text-3xl text-sky-900">{{produklainnyajudul?.judul}}</p>
+        <p class="text-center text-sky-900">{{produklainnyajudul?.deskripsi}}</p>
+    
+        <div  class="flex justify-center my-20">
+    
+             <div class="display2">
+                <div *ngFor="let produk of produkLainnya" class="isi flex flex-col justify-between border p-2 text-center">
+                    <div class="rounded bg-cyan-500">
+                      <img [src]="produk.gambar" width="100%">
+                    </div><br>
+              
+                    <p><strong>{{ produk.judul }}</strong></p>
+                    <p class="rounded">{{ produk.deskripsi }}</p>
+                    <button mat-button [routerLink]="['/detail-gis', produk.id]" class="btnselengkapnya" style="color: white;">
+                      Info Selengkapnya
+                    </button>
+                  </div>
+        </div>
+    
+        </div>
+    
+    </div>
+    
+    
+    </section>
+    
+    <section>
+    
+        <div class="mt-32">
+    
+            <div class="ml-40">
+    
+            <p class="text-left text-xs text-sky-600">{{judulkomen?.judul}}</p>
+            <p class="text-left text-xl">{{judulkomen?.deskripsi}}</p>
+    
+        </div>
+    
+        <div class="justify-center flex mt-24">
+            <button class="mr-10 top-44 hover:bg-black" mat-raised-button color="primary" (click)="slideLeft()" [disabled]="currentIndex === 0">
+                &#9664; 
+              </button>
+            <div class="display3">
+              <div
+              *ngFor="let isikomen of displayedComments"
+              class="isikomen flex justify-between flex-col border text-center align-middle p-4"
+            >
+              <div>
+                <div class="flex justify-center">
+                  <img class="my-8" [src]="isikomen.gambar" width="15%" /><br />
+                </div>
+                <p class="max-w-50">{{ isikomen.judul }}</p>
+                <div class="flex justify-center mb-8">
+                  <img src="assets/bintang.png" width="4%" *ngFor="let star of [1, 2, 3, 4, 5]" />
+                </div>
+                <p>{{ isikomen.deskripsi }}</p>
+              </div>
+            </div>
+            </div>
+            <button class="ml-10 top-44 hover:bg-black"
+            mat-raised-button
+            color="primary"
+            (click)="slideRight()"
+            [disabled]="currentIndex + commentsPerPage >= isikomen.length"
+          >
+             &#9654;
+          </button>
+             
+          </div>
+          
+        </div>
+    
+    </section>
+    
+    <section>
+    
+        <div class="cta mt-16 text-white px-5">
+            <div class="flex items-center">
+                <img src="assets/cs.png" alt="Customer Support" >
+                <div class="cta-text">
+                    <p class="text-2xl mb-8">Butuh Software Manajemen Untuk Bisnis Anda? Kami siap membantu.</p>
+                    <button [routerLink]="['/hubungi-kami']" mat-button>Hubungi Kami</button>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+
+    <div class="scroll-to-top" (click)="scrollToTop()">
+        <mat-icon>arrow_upward</mat-icon>
+      </div>
+      
+      
+    
+    </body> 
+    
+    

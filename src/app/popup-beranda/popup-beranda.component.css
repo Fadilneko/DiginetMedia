@@ -1,0 +1,196 @@
+.card {
+    background: linear-gradient(270deg, rgba(0, 64, 168, 0.99) 3.17%, rgba(0, 47, 114, 0.99) 22.17%, rgba(0, 37, 84, 0.99) 44.17%, rgba(0, 25, 48, 0.99) 74.17%);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.content {
+    margin-left: 2%;
+}
+
+.display {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.display p {
+    font-size: 30px;
+   
+  
+}
+
+.column {
+    margin-top: 5%;
+  
+}
+
+.btnx {
+    padding-top: 2.5%;
+    background-color: none;
+    margin: 0;
+    
+}
+
+.btnx mat-icon {
+    font-size: 16px
+
+}
+
+.display2 {
+    margin-top: 2%;
+ 
+    display: flex;
+    gap: 1%;
+}
+
+.titik {
+width: 5px;
+border-radius: 100%;
+background: #E3C635;
+
+height: 5px;
+}
+
+.garis {
+    width: 17%;
+    height: 5px;
+    background: #E3C635;
+    border-radius: 12px;
+}
+
+.p1 {
+    color: white;
+    margin-top: 2%;
+}
+
+.display3 {
+    display: flex;
+  
+    gap: 20%;
+
+}
+
+
+
+
+input {
+    background-color: white;
+   border-radius: 4px;
+   width: 150%;
+   padding: 6px;
+    border: none;
+   height: 40px;
+   margin-bottom: 2%;
+}
+
+select {
+    background-color: white;
+    border-radius: 4px;
+    width: 190%;
+    border: none;
+    text-align: center;
+    padding: 4px;
+    height: 42px;
+    margin-bottom: 2%;
+}
+
+.form1 {
+    margin-bottom: 2%;
+    width: 100%;
+   
+}
+
+.column1 {
+    flex-direction: column;
+}
+
+.btnkirim {
+    background: #FABB05EB;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    
+   
+
+    .content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+
+
+    .display p {
+        font-size: 24px; /* Mengurangi ukuran font untuk layar yang lebih kecil */
+    }
+
+    
+
+    .display3 {
+        flex-direction: column;
+        gap: 10%; /* Mengurangi gap di antara kolom pada layar yang lebih kecil */
+    }
+
+    input, select {
+        width: 100%; /* Menyesuaikan input dan select agar menggunakan seluruh lebar kontainer */
+    }
+
+    .garis {
+        width: 20%; /* Menyesuaikan lebar garis agar sesuai dengan layar */
+    }
+
+    .p1 {
+        text-align: center;
+    }
+
+    .btnkirim {
+        width: 100%; /* Membuat tombol Kirim mengisi seluruh lebar layar */
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .card {
+        width: 100vh;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+
+
+    .display p {
+        font-size: 12px; /* Mengurangi ukuran font untuk layar yang lebih kecil */
+    }
+
+    
+
+    .display3 {
+        flex-direction: column;
+        gap: 10%; /* Mengurangi gap di antara kolom pada layar yang lebih kecil */
+    }
+
+    input, select {
+        width: 100%; /* Menyesuaikan input dan select agar menggunakan seluruh lebar kontainer */
+    }
+
+    .garis {
+        width: 20%; /* Menyesuaikan lebar garis agar sesuai dengan layar */
+    }
+
+    .p1 {
+        text-align: center;
+    }
+
+    .btnkirim {
+        width: 100%; /* Membuat tombol Kirim mengisi seluruh lebar layar */
+        margin-top: 1rem;
+    }
+}
+

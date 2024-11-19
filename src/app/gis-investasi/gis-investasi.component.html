@@ -1,0 +1,143 @@
+<mat-card class="container">
+
+    <mat-card-content class="content">
+
+        <div class="display0">
+            <div class="column0">
+
+            <h1>GIS Potensi Investasi</h1>
+            <p>GIS (Geographic Information System) Potensi Investasi adalah sebuah sistem yang menggunakan teknologi pemetaan digital untuk mengidentifikasi, menganalisis, 
+                dan memvisualisasikan potensi investasi di suatu wilayah. Sistem ini membantu pemerintah, investor, dan berbagai pihak lainnya dalam membuat keputusan investasi
+                 yang lebih tepat berdasarkan data spasial.</p>
+            </div>
+
+        
+           
+            <img class="absolute0" src="assets/gis-investasi.png" width="20%">
+      
+      
+          
+
+        </div>
+        
+       
+        <h2>Keunggulan Produk :</h2>
+        <div class="display">
+
+            <div class="column2">
+              
+                <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Informasi Terperinci dan Terstruktur </p><p class="p0">
+                    Aplikasi ini menyediakan informasi yang lengkap dan terstruktur
+                     tentang potensi investasi, termasuk profil daerah, potensi investasi, peluang investasi, dan realisasi investasi.
+                  </p>
+
+                  <div class="garis"></div>
+
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Visualisasi Data Interaktif </p><p class="p0">
+                        Informasi disajikan dalam bentuk peta interaktif, grafik, dan rekapitulasi data, memudahkan pengguna dalam memahami dan menganalisis data.
+                  </p>
+
+                  <div class="garis"></div>
+
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Aksesibilitas dan Transparansi </p><p class="p0">
+                        Aplikasi ini meningkatkan aksesibilitas data kepegawaian dan informasi terkait, serta mendorong transparansi dalam pengelolaan investasi.
+                  </p>
+
+                  
+                  <div class="garis"></div>
+
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Manajemen Data dan Pengguna </p><p class="p0">
+                        Fitur administrator memungkinkan pengelolaan data aplikasi dan manajemen pengguna, memastikan bahwa informasi selalu akurat dan terkini.
+                  </p>
+          
+               
+                  <h2>Fitur Produk :</h2>
+          
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Profile
+                  </p>
+                  <p class="p0">Menampilkan informasi profile (visi misi, gambaran umum, aksesibiltas dan dinformasi umum profile daerah).</p>
+          
+                  <div class="garis"></div>
+          
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Peluang Investasi
+                  </p>
+                  <p class="p0">Berisikan informasi peluang investasi daerah, informasi ditampilan dalam bentuk titik lokasi dan profile industri yang menjadi peluang investasi 
+                    beserta contack person.</p>
+          
+                  <div class="garis"></div>
+          
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Realisasi Investasi
+                  </p>
+                  <p class="p0">Berisikan informasi realisasi investasi yang dapat dilihat dalam bentuk rekapitulasi data dan grafik setiap tahun dan pertriwulan.</p>
+          
+                  <div class="garis"></div>
+          
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Panduan Investasi
+                  </p>
+                  <p class="p0">informasi panduan berinvestasi, data ditampilkan dalam bentuk FAQ, regulasi dan SOP.</p>
+          
+                  <div class="garis"></div>
+          
+                  <p class="p0">
+                    <mat-icon class="check-icon">check_circle</mat-icon> Sarana Prasarana
+                  </p>
+                  <p class="p0">berisikan informasi sarana prasarana yang sudah tersedia di daerah.</p>
+          
+            </div>
+
+        
+          
+      
+
+            
+      
+
+        </div>
+
+    </mat-card-content>
+
+</mat-card>
+
+<mat-card class="container2">
+    <mat-card-content class="content2">
+
+      
+
+        <h1>Tampilan Produk:</h1>
+
+        <div class="slider-container">
+          <button class="prev" (click)="prevSlide()">&#10094;</button>
+          <div #slidesContainer class="slides">
+            <img src="assets/miringkiri.png" class="slide" width="30%">
+            <img src="assets/lap-investasi.png" class="slide" width="40%" height="200px">
+            <img src="assets/miringkanan.png" class="slide" width="30%">
+
+            <img src="assets/miringkiri.png" class="slide" width="30%">
+            <img src="assets/lap2.png" class="slide" width="40%">
+          
+            
+          </div>
+          <button class="next" (click)="nextSlide()">&#10095;</button>
+        </div>
+      
+      
+    </mat-card-content>
+</mat-card>
+<div class="cta">
+    <div class="cta-content">
+        <img src="assets/cs.png" alt="Customer Support" >
+        <div class="cta-text">
+            <p>Butuh Software Manajemen Untuk Bisnis Anda? Kami siap membantu.</p>
+            <button [routerLink]="['/hubungi-kami']" mat-button>Hubungi Kami</button>
+        </div>
+    </div>
+</div>
+

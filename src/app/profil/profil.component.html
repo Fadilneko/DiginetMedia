@@ -1,0 +1,136 @@
+        <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Dignet Media</title>
+    </head>
+    <body>
+        <div class="containe">
+    <header class="profil-header py-6" style="background: url('assets/headerprofil.png') no-repeat center center/cover;">
+        <div class="profil-content ">
+            <h1>{{ headerProfil?.judul }}</h1>
+            <p>{{ headerProfil?.deskripsi }}</p>
+        </div>
+    </header>
+
+    <!-- Content of container -->
+    <div class="card">
+        <div class="image-container">
+            <img *ngIf="isi1Profil?.gambar" class="handipad" [src]="isi1Profil?.gambar" alt="Handshake" />
+        </div>
+        <div class="text-container text-base">
+            <img class="circle-image" src="assets/lingkaran.png" alt="Circle" />
+            <p>
+                <strong>{{ kantorPusat }}</strong> {{ isi1Profil?.deskripsi }}
+            </p>
+            <p>   
+                <strong>{{ kantorPusat }}</strong> {{ isi2Profil?.deskripsi }}
+            </p>
+        </div>
+    </div>
+
+    <!-- New Content -->
+    <section class="visi-misi">
+        <div class="visi">
+          <h2>Visi</h2>
+          <ul>
+          <li *ngFor="let visi of visiList">{{ visi.deskripsi }}</li>
+        </ul>
+        </div>
+        
+        <div class="misi">
+          <h2>Misi</h2>
+          <ul>
+            <li *ngFor="let misi of misiList">{{ misi.deskripsi }}</li>
+          </ul>
+        </div>
+      </section>
+      
+
+    <!-- Pilih Kami -->
+    <div class="container-pilihkami">
+        <div class="text-container">
+            <h2>{{ memilihKami?.judul }}</h2>
+            <p>{{ memilihKami?.deskripsi }}</p>
+            <ul>
+                <li *ngFor="let item of listPilihKami">
+                    <img src="assets/centangputih.png" alt="Centang" class="centang"> {{ item.deskripsi }}
+                  </li>
+            </ul>
+        </div>
+        <div class="image-container ml-24">
+            <img *ngIf="memilihKami?.gambar" [src]="memilihKami?.gambar" alt="Gambar" />
+
+        </div>
+    </div>
+
+    <!-- Core Values -->
+    <section class="core-values ">
+        <h2 class="pt-14">{{ coreValues?.judul }}</h2>
+        <p>{{ coreValues?.deskripsi }}</p>
+        
+        <div class="core-values-grid">
+          <div class="core-value-item">
+            <!-- Display dynamic image for "Core Values" -->
+            <img *ngIf="coreValues?.gambar" [src]="coreValues?.gambar" alt="Core Values" class="gambar-core">
+          </div>
+        </div>
+      </section>
+      
+    <!-- Klien Kami -->
+    <section class="klien-kami">
+        <h2>Klien Kami</h2>
+        <p>menghadirkan solusi tepat untuk klien merupakan prioritas kami</p>
+        <div class="klien-container ">
+          <div class="klien-grid">
+            <div *ngFor="let logo of logoKlienList">
+              <img [src]="logo.gambar" [alt]="logo.judul" [matTooltip]="logo.judul">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      
+    
+    <!-- Kelebihan Produk Kami --> 
+    <section class="kelebihan-produk">
+        <h2>{{ judulkelebihanproduk?.judul }}</h2>
+        <p>{{ judulkelebihanproduk?.deskripsi }}</p>
+        <div class="kelebihan-bg"> 
+            <div class="kelebihan-grid">
+    
+                <div *ngFor="let produk of kelebihanProdukList" class="kelebihan-item">
+                  <div class="flex justify-center">
+                    <img src="{{ produk.gambar }}" alt="{{ produk.judul }}">
+                  </div>
+                  <h3>{{ produk.judul }}</h3>
+                  <p>{{ produk.deskripsi }}</p>
+                </div>
+              </div>
+            </div>
+            </section>
+
+            
+            <div class="partners-container">
+              <p class="font-bold text-4xl text-[#0047ab] mb-2 pt-20">{{ industryPartnersTitle }}</p>
+              
+              <div class="industry-partners"></div>
+              
+              <div class="partners-logos flex items-center flex-wrap justify-center">
+              
+            
+                <!-- Menampilkan semua logo -->
+                <div *ngFor="let logo of logos" class="logo-item m-4">
+                  <img [src]="logo" [alt]="logo" class="logo" />
+                </div>
+            
+               
+              </div>
+            </div>
+            
+          </div>
+
+    </body>
+    </html> 

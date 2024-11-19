@@ -1,0 +1,71 @@
+
+<h1 class="judul">{{ isEditMode ? 'Edit' : 'Tambah' }} Data</h1>
+
+<div mat-dialog-content>
+  <form [formGroup]="form">
+    <div class="display">
+    
+
+    <mat-form-field appearance="fill">
+      <mat-label>Judul</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Deskripsi</mat-label>
+      <textarea matInput formControlName="content"></textarea>
+    </mat-form-field>
+
+
+    </div>
+
+
+    <div class="display">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Kategori</mat-label>
+      <input matInput formControlName="kategori">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Detail Deskripsi</mat-label>
+      <textarea matInput formControlName="detail_deskripsi"></textarea>
+    </mat-form-field>
+
+    </div>
+
+    <mat-form-field>
+      <mat-label>Tanggal</mat-label>
+      <mat-date-range-input [rangePicker]="picker">
+        <input  formControlName="tanggal" matStartDate placeholder="Start date">
+        <input  formControlName="tanggal" matEndDate placeholder="End date">
+      </mat-date-range-input>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
+
+    <div class="display1">
+        <label for="file-upload" class="custom-file-upload">
+          Upload Gambar
+        </label>
+        <input id="file-upload" class="file" type="file" (change)="onFileSelected($event)">
+
+        <div *ngIf="imagePreview" class="image-preview">
+            <img [src]="imagePreview" alt="Preview" />
+        </div>
+
+      </div>
+
+  </form>
+</div>
+
+<div class="btn">
+  <button mat-button style="color: white;" class="btn-batal" (click)="onCancel()">Batal</button>
+  <button 
+    mat-button 
+    [disabled]="!form.valid"
+    (click)="onSave()"
+    [ngClass]="{'btn-disabled': !form.valid, 'btn-enabled': form.valid}">
+    Simpan
+  </button>
+</div>

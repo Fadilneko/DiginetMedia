@@ -1,0 +1,305 @@
+
+.hero-section {
+    background-color: #0044B4;
+    color: white;  
+ 
+
+}
+
+
+.hero-section h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.hero-section p {
+    margin-top: 8%;
+    font-size: 1.2em;
+}
+
+.p0 {
+    max-width: 478px;
+    margin-left: 18%;
+}
+
+.grid-container {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2%;
+  
+    margin-top: 2%;
+    padding: 20px;
+}
+
+.garis {
+    
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.grid-item {
+    background-color: #0044B4;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.grid-item h2 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.grid-item p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.grid-item .btn {
+    color: white;
+    background-color: #0044B4;
+   
+    border-radius: 4;
+    border: 1px solid white;
+    transition: background-color 0.3s ease;
+}
+
+.grid-item .btn:hover {
+    background-color: #003288;
+    color: white;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+
+.display0 {
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20%;
+    max-width: 67%;
+    margin-top: 2%;
+    padding: 20px;
+}
+
+.p1 {
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.p1 h1 {
+    font-weight: 500;
+    color: #00264D;
+    
+}
+
+.p1 p {
+    color: #00264D;
+
+}
+
+.p1 .btn-hubungi {
+    color: white;
+    background-color: #0044B4;
+   
+    border-radius: 4;
+    border: 1px solid white;
+    transition: background-color 0.3s ease;
+}
+
+.p1 .btn-hubungi:hover {
+    background-color: #003288;
+    color: white;
+}
+
+.p1:hover {
+    transform: translateY(-5px);
+}
+
+
+  @media only screen and (min-width: 375px) and (max-width: 667px) {
+
+   
+     
+  }
+  
+  @media only screen and (min-width: 414px) and (max-width: 896px) {
+    
+  
+  }
+  
+  @media only screen and (min-width: 390px) and (max-width: 884px) {
+  
+    
+  }
+  
+  @media only screen and (min-width: 360px) and (max-width: 740px) {
+  
+  
+   .card {
+       width: 100vh;
+   }
+
+   .hero-section {
+   
+    background-color: #0044B4;
+    color: white;
+    text-align: left;
+    height: 400px;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    margin-top:6rem;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+   .display0 {
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20%;
+    max-width: 100%;
+    margin-top: 2%;
+    padding: 20px;
+}
+
+   .cta {
+       padding: 15px;
+   }
+ 
+  
+ 
+   .cta p {
+       font-size: 18px; /* Ukuran font pada CTA */
+   }
+   .cta button {
+       padding: 8px 16px;
+       font-size: 14px;
+   }
+  
+    }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+ .card {
+    width: 100vh;
+ }
+
+   .hero-section h1 {
+    font-size: 2em;
+}
+
+.hero-section p {
+    font-size: 1em;
+}
+
+.grid-container {
+    grid-template-columns: 1fr;
+}
+
+.grid-item {
+    padding: 15px;
+}
+
+.grid-item h2 {
+    font-size: 1.2em;
+}
+
+.grid-item p {
+    font-size: 0.9em;
+}
+
+.display0 {
+
+    gap: 2%;
+    max-width: 100%;
+   
+}
+
+   .cta {
+    margin-top: 17%;
+     background-color: #003399;
+     color: white;
+     padding: 0px 20px;
+   }
+
+  }
+  
+  @media only screen and (min-width: 820px) and (max-width: 1180px) {
+  
+   .card {
+       width: 68vh;
+   }
+ 
+  
+    
+  }
+  
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  
+  
+   .card {
+       width: 73.7vh;
+   }
+  
+  
+  }
+  
+  @media only screen and (min-width: 912px) and (max-width: 1368px) {
+  
+  
+  
+   .card {
+       width: 73.7vh;
+   }
+  
+   
+  
+  }
+  
+  @media only screen and (min-width: 540px) and (max-width: 720px) {
+  
+  }
+  
+  @media only screen and (min-width: 344px) and (max-width: 882px) {
+  
+  
+   
+  }
+  
+  @media only screen and (min-width: 853px) and (max-width: 1280px) {
+  
+ 
+  
+    
+  
+  }
+  
+  @media only screen and (min-width: 412px) and (max-width: 914px) {
+  
+  
+  }
+  
+  @media only screen and (min-width: 1024px) and (max-width: 600px) {
+  
+  
+  
+  }
+  
+  @media only screen and (min-width: 1280px) and (max-width: 800px) {
+  
+  
+  
+  
+  }

@@ -1,0 +1,120 @@
+.container {
+  box-shadow: none;
+ 
+}
+
+.judul {
+  text-align: center;
+  font-size: 28px;
+}
+
+/* Flex layout for add-button section */
+.add-button {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.btn-tambah {
+  background-color: #0044b4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Table styling */
+table {
+  box-shadow: none;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Button styles */
+.edit-button {
+  background-color: #2195f337;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.delete-button {
+  
+  background-color: #f40e0e54;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+/* Responsive adjustments */
+/* Responsive adjustments for iPad Mini */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .add-button {
+      justify-content: space-between; /* Pastikan tombol berada di kiri dan kanan */
+  }
+
+  .search-container {
+      max-width: 200px; /* Atur lebar maksimum untuk kotak pencarian */
+      flex-grow: 1; /* Membuat pencarian tumbuh dan mengambil ruang yang tersedia */
+      margin-right: 10px; /* Jarak antara pencarian dan tombol tambah */
+  }
+
+  .btn-tambah {
+      margin-top: 2%;
+      /* Menyesuaikan tombol tambah agar tidak terlalu lebar */
+      min-width: 100px; /* Set minimum width */
+  }
+
+  table {
+      font-size: 14px; /* Decrease table font size for smaller screens */
+  }
+
+  th, td {
+      padding: 8px; /* Decrease padding for smaller screens */
+  }
+}
+
+/* Responsive adjustments for Samsung Galaxy S8+ */
+@media (max-width: 360px) {
+  .container {
+      padding: 5px;
+  }
+
+  .judul {
+      font-size: 20px; /* Ukuran font judul */
+      text-align: center; /* Pastikan judul berada di tengah */
+  }
+
+  .add-button {
+      flex-direction: row; /* Pastikan tetap baris pada Samsung */
+      justify-content: space-between; /* Pastikan tombol berada di kiri dan kanan */
+      width: 100%; /* Memastikan tombol menggunakan lebar penuh */
+  }
+
+  .btn-tambah {
+      max-width: 100px; /* Lebar maksimum untuk tombol pada Samsung Galaxy S8+ */
+      width: auto; /* Menyesuaikan lebar tombol */
+  }
+
+  .search-container {
+      max-width: 150px; /* Atur lebar maksimum untuk kotak pencarian */
+  }
+
+  .table-container {
+      overflow-x: auto; /* Pastikan tabel bisa scroll jika overflow */
+  }
+
+  table {
+      font-size: 12px; /* Further decrease table font size for smaller screens */
+      min-width: 500px; /* Set minimum width for table to ensure proper scrolling */
+  }
+
+  th, td {
+      padding: 6px; /* Further decrease padding for smaller screens */
+  }
+}

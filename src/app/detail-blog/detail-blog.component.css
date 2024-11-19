@@ -1,0 +1,113 @@
+.container {
+    padding: 4rem;
+
+  }
+
+  .container h1,h2 {
+    color: #545454;
+  }
+  
+  .blog-container {
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+      display: grid;
+      gap: 2%;
+      width: 80%; 
+  }
+  
+  
+  
+  .blog-item {
+    height: auto;
+    width: auto;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 0;
+    transition: transform 0.2s ease;
+    flex-direction: column;
+    text-align: left;
+   border: 1px solid #ddd;
+  }
+
+ 
+  
+  .display {
+    display: flex;
+    gap: 5%;
+  }
+
+  .display h1 {
+    color: #545454;
+  }
+  
+ 
+  .isiberita {
+  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: grid;
+    gap: 10%;
+    width: 80%;
+    
+  }
+  
+  .berita-item {
+   box-shadow: none;
+    display: flex;
+    
+   
+  }
+  
+  .column {
+    transition: transform 0.2s ease;
+    display: flex;
+    gap: 4%;
+  }
+  
+  .column p {
+    
+    font-size: 12px;
+   
+  }
+  
+  .berita-item img {
+    width: 30%;
+  
+  }
+  
+  .column:hover {
+    transform: translateY(-10px);
+  }
+  
+
+  
+  img {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  
+  p {
+   
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-item:hover {
+    transform: translateY(-5px) ;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .blog-container {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    
+    }
+
+  }
+
+  @media (max-width: 360px) {
+
+    .container {
+        width: 80vh;
+       
+    }
+  
+  }
+  

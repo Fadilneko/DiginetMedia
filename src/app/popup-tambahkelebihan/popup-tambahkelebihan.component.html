@@ -1,0 +1,38 @@
+<h1 class="judul">{{ isEditMode ? 'Edit' : 'Tambah' }} Data</h1>
+
+<div mat-dialog-content>
+ 
+
+  <form [formGroup]="kelebihanForm">
+
+      <mat-form-field appearance="outline">
+      <mat-label>Deskripsi</mat-label>
+      <textarea matInput formControlName="deskripsi"></textarea>
+    </mat-form-field>
+
+      <mat-form-field appearance="outline">
+      <mat-label>Nama</mat-label>
+      <input matInput formControlName="nama">
+    </mat-form-field>
+
+
+       <div class="display1">
+    <label for="file-upload" class="custom-file-upload">
+      Pilih Gambar
+    </label>
+    <input id="file-upload" class="file" type="file" (change)="onFileSelected($event)">
+
+    <div *ngIf="imagePreview" class="image-preview">
+        <img [src]="imagePreview" alt="Preview" />
+    </div>
+
+  </div>
+
+</form>
+
+  <div class="button-group">
+    <button mat-raised-button color="warn" class="kembali-button" (click)="onCancel()">Kembali</button>
+    <button mat-raised-button color="primary" class="simpan-button" (click)="onSave()">Simpan</button>
+  </div>
+ 
+</div>

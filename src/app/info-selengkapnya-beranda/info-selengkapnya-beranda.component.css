@@ -1,0 +1,161 @@
+.container {
+    box-shadow: none;
+    padding: 4rem;
+}
+
+.content h1 {
+    color: #00264D;
+}
+
+.display0 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column0 {
+  max-width: 1070px;
+}
+
+.absolute0 {
+
+    
+}
+
+
+.display1 {
+    display: flex;
+    gap: 5%;
+}
+
+.p0 {
+ 
+    color: #00264D;
+
+}
+
+.p1 {
+ 
+   font-size: 16px;
+    color: black;
+
+}
+
+.garis {
+    height: 1px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.container2 {
+    box-shadow: none;
+    background-color: rgb(241, 249, 255);
+    padding: 4rem;
+}
+
+.content2 h1 {
+    text-align: center;
+    color: #00264D;
+
+}
+
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+ 
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+
+.cta {
+   
+    background-color: #003399;
+    color: white;
+    padding: 0px 20px;
+  }
+  
+  .cta-content {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .cta img {
+    width: 32%;
+  }
+  
+  .cta-text {
+    max-width: 400px;
+  }
+  
+  .cta p {
+    font-size: 24px; /* Ukuran font sesuai gambar */
+    margin-bottom: 10%;
+  }
+  
+  .cta button {
+    background-color: white;
+    color: #003399;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .cta button:hover {
+    background-color: #ddd;
+  }
+
+  .check-icon {
+    color: #003399;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .column0 {
+      max-width: 400px;
+    }
+
+    .absolute0 {
+      width: 30%;
+      height: 130px;
+    }
+
+  }
+  
+  

@@ -1,0 +1,89 @@
+/* Kontainer umum */
+.container {
+    width: 100%;
+    max-width: 400px; /* Mengurangi lebar untuk tampilan lebih ramping */
+    margin: 0 auto; /* Memposisikan di tengah */
+    padding: 20px;
+    display: flex; /* Menambahkan flex untuk perataan */
+    flex-direction: column; /* Mengatur arah konten menjadi kolom */
+    justify-content: center; /* Memposisikan konten di tengah secara vertikal */
+    align-items: center; /* Memposisikan konten di tengah secara horizontal */
+    text-align: center; /* Memastikan teks berada di tengah */
+  }
+
+  .judul {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .full-width {
+    width: 100%; /* Menggunakan lebar penuh untuk form */
+  }
+  
+  .mat-form-field {
+    width: 100%;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    resize: none;
+  }
+  
+  /* Button styling */
+  .btn {
+    display: flex;
+    justify-content: right;
+    margin-right: 2%;
+    gap: 3%;
+  }
+  
+  /* Tombol simpan disabled */
+  .btn {
+    display: flex;
+    justify-content: right;
+    margin-right: 2%;
+    gap: 3%;
+  }
+  
+  /* Tombol simpan disabled */
+  .btn-disabled {
+    background-color: #ddd;
+    color: #9e9e9e;
+    cursor: not-allowed;
+  }
+  
+  /* Tombol simpan enabled */
+  .btn-enabled {
+    background-color: #3f51b5;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn-batal {
+    background-color: #e12323;
+    padding: 8px 16px;
+    width: 13%;
+  }
+  
+  button[mat-button] {
+    padding: 8px 16px;
+  }
+  
+  /* Tombol di dialog */
+  button {
+    cursor: pointer;
+  }
+  
+  /* Responsif pada layar lebih kecil */
+  @media (max-width: 768px) {
+    .button-row {
+      justify-content: center; /* Tetap mengatur tombol di tengah */
+    }
+  }
+  

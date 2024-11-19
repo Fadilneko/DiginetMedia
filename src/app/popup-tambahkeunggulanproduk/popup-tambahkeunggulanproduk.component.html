@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>{{ isEditMode ? 'Edit Keunggulan' : 'Tambah Keunggulan' }}</h2>
+
+<mat-dialog-content>
+  <form #featureForm="ngForm">
+    <!-- Field Judul keunggulan -->
+    <mat-form-field>
+      <mat-label>Judul keunggulan</mat-label>
+      <input matInput name="judul_keunggulan" [(ngModel)]="data.judul_keunggulan" required>
+    </mat-form-field>
+
+    <!-- Field Deskripsi keunggulan -->
+    <mat-form-field>
+      <mat-label>Deskripsi keunggulan</mat-label>
+      <textarea matInput name="deskripsi_keunggulan" [(ngModel)]="data.deskripsi_keunggulan" required></textarea>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Batal</button>
+  <button mat-button color="primary" (click)="onAddFeature(featureForm)">
+    {{ isEditMode ? 'Simpan' : 'Tambah' }}
+  </button>
+</mat-dialog-actions>

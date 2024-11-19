@@ -1,0 +1,67 @@
+<div class="container">
+  <h1 class="judul">{{ isEditMode ? 'Edit' : 'Tambah' }} Data</h1>
+  <form [formGroup]="form">
+    <!-- Produk 1 -->
+    <div class="row">
+      <div class="col half-width logo-kantor">
+        <label>Produk 1 :</label>
+        <div class="custom-file-input">
+          <input type="file" (change)="onFileSelect($event, 'produkLain1')" id="logoKantor" formControlName="produkLain1">
+          <label for="logoKantor">
+            <img src="assets/file.png" alt="File Icon"> Pilih Gambar
+          </label>
+        </div>
+        <!-- Preview Gambar Produk 1 -->
+        <div *ngIf="imagePreviews['produkLain1']" class="image-preview">
+          <img [src]="imagePreviews['produkLain1']" alt="Produk 1 Preview" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="row">
+      <div class="col half-width">
+        <label>Produk 2 :</label>
+        <div class="custom-file-input">
+          <input type="file" (change)="onFileSelect($event, 'produkLain2')" id="fotoKantor" formControlName="produkLain2">
+          <label for="fotoKantor">
+            <img src="assets/file.png" alt="File Icon"> Pilih Gambar
+          </label>
+        </div>
+        <!-- Preview Gambar Produk 2 -->
+        <div *ngIf="imagePreviews['produkLain2']" class="image-preview">
+          <img [src]="imagePreviews['produkLain2']" alt="Produk 2 Preview" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="row">
+      <div class="col half-width map-kantor">
+        <label>Produk 3 :</label>
+        <div class="custom-file-input">
+          <input type="file" (change)="onFileSelect($event, 'produkLain3')" id="mapKantor" formControlName="produkLain3">
+          <label for="mapKantor">
+            <img src="assets/file.png" alt="File Icon"> Pilih Gambar
+          </label>
+        </div>
+        <!-- Preview Gambar Produk 3 -->
+        <div *ngIf="imagePreviews['produkLain3']" class="image-preview">
+          <img [src]="imagePreviews['produkLain3']" alt="Produk 3 Preview" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Button row -->
+    <div class="btn">
+      <button mat-button style="color: white;" class="btn-batal" (click)="onCancel()">Batal</button>
+      <button 
+        mat-button 
+        [disabled]="!form.valid"
+        (click)="onSave()"
+        [ngClass]="{'btn-disabled': !form.valid, 'btn-enabled': form.valid}">
+        Simpan
+      </button>
+    </div>
+  </form>
+</div>

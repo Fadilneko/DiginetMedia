@@ -1,0 +1,39 @@
+<div class="container" *ngIf="detail">
+   
+  
+    <p class="font-medium text-3xl">Berita</p>
+  
+    <div class="display">
+  
+    <div class="blog-container">
+
+      <mat-card *ngIf="detail" class="blog-item">
+       
+        <img [src]="detail.image_url" [alt]="detail.title" />
+        <p class="font-medium text-2xl">{{ detail.title }}</p>
+        <p>{{ detail.detail_deskripsi }}</p>
+      </mat-card>
+      
+
+    </div>
+  
+    <div class="berita ">
+     
+      <div class="isiberita border border-blue-800 p-6 rounded h-auto">
+        <p class="font-semibold text-lg">Berita Terpopuler</p>
+        <button [routerLink]="['/blog', blog.id]" class="berita-item text-left" *ngFor="let blog of blogpopuler">
+          <div class="column">
+            <img [src]="blog.image_url" alt=""  />
+            <div class="column1">
+              <p class="font-medium">{{ blog.content }}</p>
+              <div class="flex">
+              <mat-icon class="text-sm">calendar_today</mat-icon><p class="tanggal text-sm ">{{ blog.tanggal }}</p>
+            </div>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div> 

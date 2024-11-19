@@ -1,0 +1,62 @@
+<h1 class="judul">{{ isEditMode ? "Edit" : "Tambah" }} Data</h1>
+
+<div mat-dialog-content>
+  <form [formGroup]="form">
+    <div class="display">
+      <!-- <mat-form-field appearance="outline">
+        <mat-label>No</mat-label>
+        <input matInput formControlName="no" />
+      </mat-form-field> -->
+
+      <mat-form-field appearance="outline">
+        <mat-label>Deskripsi</mat-label>
+        <input matInput formControlName="deskripsi" />
+      </mat-form-field>
+    </div>
+
+    <div class="display">
+      <mat-form-field appearance="outline">
+        <mat-label>Visi</mat-label>
+        <input matInput formControlName="visi" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Misi</mat-label>
+        <input matInput formControlName="misi" />
+      </mat-form-field>
+    </div>
+
+    <div class="display1">
+      <label for="file-upload" class="custom-file-upload"> Pilih Gambar </label>
+      <input
+        id="file-upload"
+        class="file"
+        type="file"
+        (change)="onFileSelected($event)"
+      />
+
+      <div *ngIf="imagePreview" class="image-preview">
+        <img [src]="imagePreview" alt="Preview" />
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="btn">
+  <button
+    mat-button
+    style="color: white"
+    class="btn-batal"
+    (click)="onCancel()"
+  >
+    Batal
+  </button>
+  <button
+    mat-button
+    [disabled]="!form.valid"
+    (click)="onSave()"
+    [ngClass]="{ 'btn-disabled': !form.valid, 'btn-enabled': form.valid }"
+  >
+    Simpan
+  </button>
+</div>

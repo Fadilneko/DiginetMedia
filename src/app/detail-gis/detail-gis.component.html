@@ -1,0 +1,80 @@
+<mat-card class="card shadow-none p-16" *ngIf="detail">
+  <mat-card-content class="content">
+    <div class="display0 flex justify-between">
+      <div class="column0">
+        <h1>{{ detail.judul }}</h1>
+        <p>{{ detail.deskripsi }}</p>
+      </div>
+      <img class="absolute0" [src]="detail.gambar" width="30%" />
+    </div>
+
+    <h2>Keunggulan Produk</h2>
+    <div class="display" *ngIf="detail?.keunggulan?.length">
+      <div class="column2" *ngFor="let keunggulan of detail.keunggulan">
+        <p class="p0">
+          <mat-icon class="check-icon">check_circle</mat-icon>{{keunggulan.judul_keunggulan}}
+        </p>
+        <p class="p0">{{keunggulan.deskripsi_keunggulan}}</p>
+      </div>
+      <div class="garis w-full"></div>
+    </div>
+    
+
+    
+
+    <h2>Fitur Produk:</h2>
+    <div class="display">
+      <div class="display" *ngIf="detail?.fitur?.length">
+        <div class="column2" *ngFor="let fitur of detail.fitur">
+          <p class="p0">
+            <mat-icon class="check-icon">check_circle</mat-icon>{{fitur.judul_fitur}}
+          </p>
+          <p class="p0">{{fitur.deskripsi_fitur}}</p>
+        </div>
+        <div class="garis w-full"></div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="container2 shadow-none p-16">
+  <div class="wrapper">
+
+    <h1>Tampilan Produk</h1>
+
+    <img class="laptop-image" src="assets/laptop.png">
+
+    <div class="news-slider">
+      <div class="news-slider__wrp swiper-wrapper">
+        <!-- Slider Items -->
+        <div class="news-slider__item swiper-slide" *ngFor="let image of imagesToShow">
+          <div class="news__img">
+            <img [src]="image" alt="news">
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <div class="news-slider__arrow news-slider-prev">
+        <mat-icon>arrow_back</mat-icon>
+      </div>
+      <div class="news-slider__arrow news-slider-next">
+        <mat-icon>arrow_forward</mat-icon>
+      </div>
+    </div>
+
+    <div class="swiper-scrollbar"></div>
+
+  </div>
+</mat-card>
+
+
+<div class="cta">
+  <div class="cta-content">
+    <img src="assets/cs.png" alt="Customer Support">
+    <div class="cta-text">
+      <p>Butuh Software Manajemen Untuk Bisnis Anda? Kami siap membantu.</p>
+      <button [routerLink]="['/hubungi-kami']" mat-button>Hubungi Kami</button>
+    </div>
+  </div>
+</div>

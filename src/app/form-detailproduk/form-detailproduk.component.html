@@ -1,0 +1,145 @@
+<div class="bg-white p-8 rounded-lg shadow-md w-full max-w-3xl">
+  <h1 class="text-center text-2xl font-bold mb-6">{{ isEditMode ? 'Edit Detail Produk' : 'Tambah Detail Produk' }}</h1>
+  <form [formGroup]="form">
+      <div class="grid grid-cols-2 gap-6 mb-4">
+
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Judul</label>
+          <input class="w-full border border-gray-300 p-2 rounded " placeholder="Masukan Judul" formControlName="judul">
+        </div>
+
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Judul Slide</label>
+          <input class="w-full border border-gray-300 p-2 rounded " placeholder="Masukan Judul" formControlName="judul_slide">
+        </div>
+
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Deskripsi:</label>
+          <textarea class="w-full border border-gray-300 p-2 rounded h-32" placeholder="Deskripsi" rows="5" formControlName="deskripsi"></textarea>
+        </div>
+
+        <div>
+          <label class="block mb-2 font-semibold">Kategori:</label>
+          <input type="text" class="w-full border border-gray-300 p-2 rounded" placeholder="Kategori" formControlName="kategori">
+        </div>
+          
+          <div>
+              <label class="block mb-2 font-semibold">Gambar Kiri:</label>
+              <label for="logo-upload" class="block w-full border border-gray-300 p-2 rounded text-center cursor-pointer">Pilih Gambar Kiri</label>
+              <input id="logo-upload" type="file" class="hidden" (change)="onGambarKiri($event)">
+              <div *ngIf="gambarkiriPreview" class="mt-2">
+                  <img [src]="gambarkiriPreview"  class="w-32 h-32 object-cover">
+              </div>
+          </div>
+          <div>
+              <label class="block mb-2 font-semibold">Gambar Tengah:</label>
+              <label for="foto-upload" class="block w-full border border-gray-300 p-2 rounded text-center cursor-pointer">Pilih Gambar Tengah</label>
+              <input id="foto-upload" type="file" class="hidden" (change)="onGambarTengah($event)">
+              <div *ngIf="gambartengahPreview" class="mt-2">
+                  <img [src]="gambartengahPreview"  class="w-32 h-32 object-cover">
+              </div>
+          </div>
+        
+          <div>
+              <label class="block mb-2 font-semibold">Gambar Kanan:</label>
+              <label for="gmaps-upload" class="block w-full border border-gray-300 p-2 rounded text-center cursor-pointer">Pilih Gambar Kanan</label>
+              <input id="gmaps-upload" type="file" class="hidden" (change)="onGambarKanan($event)">
+              <div *ngIf="gambarkananPreview" class="mt-2">
+                  <img [src]="gambarkananPreview"  class="w-32 h-32 object-cover">
+              </div>
+          </div>
+
+          <div>
+            <label class="block mb-2 font-semibold">Gambar :</label>
+            <label for="gambar-upload" class="block w-full border border-gray-300 p-2 rounded text-center cursor-pointer">Pilih Gambar</label>
+            <input id="gambar-upload" type="file" class="hidden" (change)="onGambar($event)">
+            <div *ngIf="gambarPreview" class="mt-2">
+                <img [src]="gambarPreview"  class="w-32 h-32 object-cover">
+            </div>
+        </div>
+
+      </div>
+
+      <div class="add-button">
+        <mat-form-field class="search-container" appearance="outline">
+          <mat-icon matPrefix>search</mat-icon>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Pencarian">
+        </mat-form-field>
+  
+        <button mat-button class="btn-tambah" (click)="openAddKeunggulan(false)">
+          Tambah
+        </button>
+      </div>
+
+<table mat-table [dataSource]="dataKeunggulan" class="mat-elevation-z8">
+<!-- Kolom Judul keunggulan -->
+<ng-container matColumnDef="judul_keunggulan">
+  <th mat-header-cell *matHeaderCellDef> Judul keunggulan </th>
+  <td mat-cell *matCellDef="let keunggulan">{{ keunggulan.judul_keunggulan }}</td>
+</ng-container>
+
+<!-- Kolom Deskripsi keunggulan -->
+<ng-container matColumnDef="deskripsi_keunggulan">
+  <th mat-header-cell *matHeaderCellDef> Deskripsi keunggulan </th>
+  <td mat-cell *matCellDef="let keunggulan">{{ keunggulan.deskripsi_keunggulan }}</td>
+</ng-container>
+
+<!-- Kolom Aksi -->
+<ng-container matColumnDef="aksi">
+  <th mat-header-cell *matHeaderCellDef> Aksi </th>
+  <td mat-cell *matCellDef="let keunggulan; let i = index">
+    <button mat-button (click)="openAddKeunggulan(true, keunggulan, i)">
+      Edit
+    </button>
+    <button mat-button (click)="removeKeunggulan(i)">Hapus</button>
+  </td>
+</ng-container>
+
+<tr mat-header-row *matHeaderRowDef="displayedKeunggulan"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedKeunggulan;"></tr>
+</table>
+
+      <div class="add-button">
+        <mat-form-field class="search-container" appearance="outline">
+          <mat-icon matPrefix>search</mat-icon>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Pencarian">
+        </mat-form-field>
+  
+        <button mat-button class="btn-tambah" (click)="openAddFeatureDialog(false)">
+          Tambah
+        </button>
+      </div>
+
+<table mat-table [dataSource]="dataFitur" class="mat-elevation-z8">
+<!-- Kolom Judul Fitur -->
+<ng-container matColumnDef="judul_fitur">
+  <th mat-header-cell *matHeaderCellDef> Judul Fitur </th>
+  <td mat-cell *matCellDef="let fitur">{{ fitur.judul_fitur }}</td>
+</ng-container>
+
+<!-- Kolom Deskripsi Fitur -->
+<ng-container matColumnDef="deskripsi_fitur">
+  <th mat-header-cell *matHeaderCellDef> Deskripsi Fitur </th>
+  <td mat-cell *matCellDef="let fitur">{{ fitur.deskripsi_fitur }}</td>
+</ng-container>
+
+<!-- Kolom Aksi -->
+<ng-container matColumnDef="aksi">
+  <th mat-header-cell *matHeaderCellDef> Aksi </th>
+  <td mat-cell *matCellDef="let fitur; let i = index">
+    <button mat-button (click)="openAddFeatureDialog(true, fitur, i)">Edit</button>
+    <button mat-button (click)="removeFitur(i)">Hapus</button>
+  </td>
+</ng-container>
+
+<tr mat-header-row *matHeaderRowDef="displayedFitur"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedFitur;"></tr>
+</table>
+
+
+<div class="flex justify-end space-x-4">
+          <button type="button" class="bg-red-500 text-white px-4 py-2 rounded" (click)="onCancel()">Kembali</button>
+          <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded" (click)="onSave()">{{ isEditMode ? 'Ubah' : 'Simpan' }}</button>
+      </div>
+  </form>
+</div>

@@ -1,0 +1,88 @@
+<mat-card class="container">
+  <mat-card-content class="content">
+    <h2 class="judul">Identitas Kantor</h2>
+
+    <div class="add-button">
+      <mat-form-field class="search-container" appearance="outline">
+        <input matInput (keyup)="applyFilter($event)" placeholder="Pencarian">
+      </mat-form-field>
+
+      <button mat-button class="btn-tambah" style="color: white;" (click)="openDialog(false)">Tambah</button>
+    </div>
+
+    <div class="overflow-auto">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <!-- No Column -->
+        <ng-container matColumnDef="no">
+          <th mat-header-cell *matHeaderCellDef>No.</th>
+          <td mat-cell *matCellDef="let element; let i = index">{{ i + 1 }}</td>
+        </ng-container>
+
+        <!-- Kantor Column -->
+        <ng-container matColumnDef="kantor">
+          <th mat-header-cell *matHeaderCellDef>Kantor</th>
+          <td mat-cell *matCellDef="let element">{{ element.kantor }}</td>
+        </ng-container>
+
+        <!-- Deskripsi Column -->
+        <ng-container matColumnDef="deskripsi">
+          <th mat-header-cell *matHeaderCellDef>Deskripsi</th>
+          <td mat-cell *matCellDef="let element">{{ element.deskripsi }}</td>
+        </ng-container>
+
+        <!-- Alamat Column -->
+        <ng-container matColumnDef="alamat">
+          <th mat-header-cell *matHeaderCellDef>Alamat</th>
+          <td mat-cell *matCellDef="let element">{{ element.alamat }}</td>
+        </ng-container>
+
+        <!-- Foto Kantor Column -->
+        <ng-container matColumnDef="foto_kantor">
+          <th mat-header-cell *matHeaderCellDef>Foto Kantor</th>
+          <td mat-cell *matCellDef="let element">
+            <img [src]="element.foto_kantor" alt="Foto Kantor" style="width: 50px; height: auto;">
+          </td>
+        </ng-container>
+
+        <!-- Logo Kantor Column -->
+        <ng-container matColumnDef="logo_kantor">
+          <th mat-header-cell *matHeaderCellDef>Logo Kantor</th>
+          <td mat-cell *matCellDef="let element">
+            <img [src]="element.logo_kantor" alt="Logo Kantor" style="width: 50px; height: auto;">
+          </td>
+        </ng-container>
+
+        <!-- Gmaps Column -->
+        <ng-container matColumnDef="gmaps">
+          <th mat-header-cell *matHeaderCellDef>Google Maps</th>
+          <td mat-cell *matCellDef="let element">{{ element.gmaps }}</td>
+        </ng-container>
+
+        <!-- Kategori Column -->
+        <ng-container matColumnDef="kategori">
+          <th mat-header-cell *matHeaderCellDef>Kategori</th>
+          <td mat-cell *matCellDef="let element">{{ element.kategori }}</td>
+        </ng-container>
+
+          <!-- Aksi Column -->
+          <ng-container matColumnDef="aksi">
+            <th mat-header-cell *matHeaderCellDef>Aksi</th>
+            <td mat-cell *matCellDef="let element">
+              <button mat-icon-button (click)="openDialog(true, element)">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-icon-button (click)="confirmDelete(element)">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+
+        <!-- Header and Row Definitions -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+      <mat-paginator [length]="dataSource.data.length" [pageSize]="5"></mat-paginator>
+    </div>
+  </mat-card-content>
+</mat-card>

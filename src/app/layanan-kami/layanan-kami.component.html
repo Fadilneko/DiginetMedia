@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Kami</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-roboto min-h-screen" >
+
+    <div class="header bg-cover bg-center text-white py-20 px-8" style="background-image: url('assets/headerlayanan.png');">
+        <h1 class="text-center font-poppins text-4xl font-semibold leading-snug">{{ headerLayanan?.judul }}</h1>
+        <p class="text-center font-poppins text-lg font-semibold leading-6 tracking-wide">{{headerLayanan?.deskripsi}}</p>
+    </div>
+
+    <div class="card flex  items-center">
+        <div class=" flex items-center justify-center w-full py-12 border-b  gap-40 border-gray-200 bg-gray-50 shadow">
+            <img [src]="isilayanan1?.gambar" class="max-w-xs"/>
+            <h2 class="text-center text-blue-900 mx-10">{{isilayanan1?.judul}}</h2>
+        </div>
+        <div class=" flex items-center justify-center w-full py-12 border-b gap-40 border-gray-200 bg-gray-50 shadow">
+            
+            <h2 class="text-center text-blue-900">{{isilayanan2?.judul}}</h2>
+            <img [src]="isilayanan2?.gambar" alt="Early Warning System (EWS)" class="max-w-xs"/>
+        </div>
+        <div class="item flex items-center justify-center w-full py-12 border-b  gap-40 border-gray-200 bg-gray-50 shadow">
+            <img [src]="isilayanan3?.gambar" alt="Internet of Things (IoT)" class="max-w-xs"/>
+            <h2 class="text-center text-blue-900 mx-10">{{isilayanan3?.judul}}</h2>
+        </div>
+        <div class="item flex items-center justify-center w-full py-12 border-b  gap-40 border-gray-200 bg-gray-50 shadow">
+           
+            <h2 class="text-center text-blue-900">{{isilayanan4?.judul}}</h2>
+            <img [src]="isilayanan4?.gambar" alt="Sewa Virtual Privat Server (VPS) dan Networking" class="max-w-xs"/>
+        </div>
+        <div class="item flex items-center justify-center w-full py-12 border-b gap-40 border-gray-200 bg-gray-50 shadow">
+            <img [src]="isilayanan5?.gambar" alt="Training" class="max-w-xs"/>
+            <h2 class="text-center text-blue-900 mx-10">{{isilayanan5?.judul}}</h2>
+        </div>
+    </div>
+
+    <div class="field-service py-12 bg-gray-200">
+        <h2 class="text-center text-gray-800 text-2xl mb-2">{{judulisilayanan?.judul}}</h2>
+        <p class="text-center text-gray-600 mb-12">{{judulisilayanan?.deskripsi}}</p>
+        <div class=" flex justify-around flex-wrap ">
+            <div class="service p-4 max-w-xs">
+                <img [src]="isijudullayanan1?.gambar" alt="Public service" class="max-w-xs   ml-8">
+                <h3 class="text-lg font-semibold text-center">{{isijudullayanan1?.judul}}</h3>
+                <p class="text-left">{{isijudullayanan1?.deskripsi}}</p>
+            </div>
+            <div class="service p-4 max-w-xs">
+                <img [src]="isijudullayanan2?.gambar" alt="Management Innovation" class="max-w-xs  ml-6">
+                <h3 class="text-lg font-semibold text-center">{{isijudullayanan2?.judul}}</h3>
+                <p class="text-left">{{isijudullayanan2?.deskripsi}}</p>
+            </div>
+            <div class="service p-4 max-w-xs">
+                <img [src]="isijudullayanan3?.gambar" alt="System Security" class="max-w-xs   ml-6">
+                <h3 class="text-lg font-semibold text-center">{{isijudullayanan3?.judul}}</h3>
+                <p>{{isijudullayanan3?.deskripsi}}</p>
+            </div>
+            <div class="service p-4 max-w-xs">
+                <img [src]="isijudullayanan4?.gambar" alt="Data Analis" class="max-w-xs   ml-2">
+                <h3 class="text-lg font-semibold text-center">{{isijudullayanan4?.judul}}</h3>
+                <p class="text-left">{{isijudullayanan4?.deskripsi}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="trusted py-8 text-center">
+      
+        <div class="trusted-content flex items-center justify-center flex-wrap">
+            <p class="font-poppins text-2xl font-semibold text-blue-900 mb-4">{{isilayananterakhir?.judul}}</p>
+            <img [src]="isilayananterakhir1?.gambar" alt="Pupuk Kaltim" class="max-w-xs mx-2">
+            <img [src]="isilayananterakhir2?.gambar" alt="KDM" class="max-w-xs mx-2">
+            <img [src]="isilayananterakhir3?.gambar" alt="Telkom Indonesia" class="max-w-xs mx-2">
+            <img [src]="isilayananterakhir4?.gambar" alt="Satu Sehat" class="max-w-xs mx-2">
+            <img [src]="isilayananterakhir5?.gambar" alt="BPJS Kesehatan" class="max-w-xs mx-2">
+        </div>
+    </div>
+
+    <div class="cta bg-blue-800 text-white py-8 px-4">
+        <div class="cta-content flex items-center">
+            <img src="assets/cs.png" alt="Customer Support" class="w-1/3">
+            <div class="cta-text max-w-md ml-4">
+                <p class="text-2xl mb-4">Butuh Software Manajemen Untuk Bisnis Anda? Kami siap membantu.</p>
+                <button class="bg-white text-blue-800 py-2 px-4 rounded">Hubungi Kami</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

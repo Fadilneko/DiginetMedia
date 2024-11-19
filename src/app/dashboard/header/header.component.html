@@ -1,0 +1,78 @@
+
+
+
+
+<mat-toolbar class="mainheader sticky top-0 z-10 bg-blue-700 ">
+
+  <mat-toolbar-row class="row  mt-4">
+    <img class="img1 ml-24" src="assets/digimedia.png" alt="My App Logo" />
+
+    <div class="spacer"></div>
+    <div class="navigation flex justify-around ">
+
+      <div class="menu-item0 flex justify-center mt-2 mr-9">
+        <!-- <a href="beranda">BERANDA</a> -->
+      </div>
+
+      <div class="menu-item flex justify-center text-center items-center">
+        <!-- <a href="layanan-kami">LAYANAN</a> -->
+        <!-- <div class="submenu flex justify-around absolute top-full w-full h-64 bg-white left-0" [class.show]="activeMenu === 'layanan-kami'">
+          <div class="column">
+            <img src="assets/trainings.png" width="60%"><br>
+            <button mat-button [routerLink]="['/training']" (click)="closeSubmenu()">Training</button>
+          </div>
+        </div>
+        <button mat-icon-button class="dropdown-icon" (click)="toggleSubmenu($event, 'layanan-kami')">
+          <mat-icon [ngClass]="{'rotate-icon': activeMenu === 'layanan-kami'}">arrow_drop_down</mat-icon>
+        </button> -->
+      </div>
+
+      <div class="menu-item flex justify-center text-center items-center ">
+        <!-- <a href="produk">PRODUK</a> -->
+        <!-- <div class="submenu flex justify-around absolute top-full w-full h-64 bg-white left-0" [class.show]="activeMenu === 'produk'">
+          <div class="column">
+            <img src="assets/cs2.png" width="60%"><br>
+            <button mat-button [routerLink]="['/hubungi-kami']" (click)="closeSubmenu()">Hubungi Kami</button>
+          </div>
+        </div>
+        <button mat-icon-button class="dropdown-icon" (click)="toggleSubmenu($event, 'produk')">
+          <mat-icon [ngClass]="{'rotate-icon': activeMenu === 'produk'}">arrow_drop_down</mat-icon>
+        </button> -->
+      </div>
+
+      <div class="menu-item flex items-center gap-10">
+        <a class="hover:text-white text-blue-200" href="beranda">BERANDA</a>
+        <a class="hover:text-white text-blue-200" href="layanan-kami">LAYANAN</a>
+        <a class="hover:text-white text-blue-200" href="produk">PRODUK</a>
+        <a class="hover:text-white text-blue-200" href="profil">PROFIL</a>
+        <a class="hover:text-white text-blue-200" href="blog">BLOG</a>
+        <a class="hover:text-white text-blue-200" href="lain-lain">LAIN-LAIN</a>
+      </div>
+
+      <div class="menu-item flex items-center ml-10">
+        <!-- <a href="lain-lain">LAIN-LAIN</a> -->
+        <!-- <div class="submenu flex justify-around absolute top-full w-full h-64 bg-white left-0" [class.show]="activeMenu === 'lain-lain'">
+          <div class="column">
+            <img  src="assets/trainings.png" width="60%"><br>
+            <button mat-button [routerLink]="['/training']" (click)="closeSubmenu()">Training</button>
+          </div>
+          <div class="column">
+            <img src="assets/cs2.png" width="60%"><br>
+            <button mat-button [routerLink]="['/hubungi-kami']" (click)="closeSubmenu()">Hubungi Kami</button>
+          </div>
+          <div class="column">
+            <img class="mt-4" src="assets/karirs.png" width="60%"><br>
+            <button mat-button [routerLink]="['/teknologi']" (click)="closeSubmenu()">Teknologi</button>
+          </div>
+        </div>
+        <button mat-icon-button class="dropdown-icon" (click)="toggleSubmenu($event, 'lain-lain')">
+          <mat-icon [ngClass]="{'rotate-icon': activeMenu === 'lain-lain', 'arrow-down': activeMenu ===''}">arrow_drop_down</mat-icon>
+        </button> -->
+      </div>
+    </div>
+
+    <button [routerLink]="['/hubungi-kami']" mat-button class="btn mr-20">Tanya Produk</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+

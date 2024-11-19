@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>{{ isEditMode ? 'Edit Fitur' : 'Tambah Fitur' }}</h2>
+
+<mat-dialog-content>
+  <form #featureForm="ngForm">
+    <!-- Field Judul Fitur -->
+    <mat-form-field>
+      <mat-label>Judul Fitur</mat-label>
+      <input matInput name="judul_fitur" [(ngModel)]="data.judul_fitur" required>
+    </mat-form-field>
+
+    <!-- Field Deskripsi Fitur -->
+    <mat-form-field>
+      <mat-label>Deskripsi Fitur</mat-label>
+      <textarea matInput name="deskripsi_fitur" [(ngModel)]="data.deskripsi_fitur" required></textarea>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Batal</button>
+  <button mat-button color="primary" (click)="onAddFeature(featureForm)">
+    {{ isEditMode ? 'Simpan' : 'Tambah' }}
+  </button>
+</mat-dialog-actions>

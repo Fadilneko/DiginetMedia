@@ -1,0 +1,23 @@
+<div class="login-wrapper" style="background-image: url('assets/bg-login.png'); background-size: cover; background-position: center; height: 100vh; display: flex; justify-content: center; align-items: center;">
+  <div class="login-container">
+      <img class="melengkung" src="assets/melengkung.png" alt="">
+      <div class="logo">
+        <div class="flex justify-center">
+          <img  src="assets/digimedia.png" alt="Diginet Media Logo">
+        </div>
+          <div class="garis"></div>
+      </div>
+
+      <div class="input-group">
+          <label for="nama">Username</label>
+          <input type="text" id="nama" [(ngModel)]="nama" placeholder="Username">
+      </div>
+      <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" [(ngModel)]="password" placeholder="Password">
+      </div>
+  
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+      <button (click)="login()" class="login-btn">Login</button>
+  </div>
+</div>

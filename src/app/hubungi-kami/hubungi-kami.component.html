@@ -1,0 +1,126 @@
+<body class="bg-gray-100">
+  <img src="assets/hubungikami1.png" class="w-full">
+
+  <div class="max-w-7xl mx-auto p-6">
+    <div class="bg-white shadow-lg rounded-lg p-8">
+      <h1 class="text-2xl font-medium mb-2">Diginet Media</h1>
+      <div class="h-1 w-1/12 bg-blue-600 mb-3"></div>
+      <p class="mb-5">Silahkan isi form berikut ini untuk menyampaikan pertanyaan atau kebutuhan anda.</p>
+<!-- Start -->
+<div class="flex flex-col md:flex-row md:space-x-8">
+  <div class="w-full md:w-2/5 bg-white p-6 shadow-md rounded-lg mb-8 md:mb-0">
+    <h2 class="text-xl font-medium mb-4">Formulir Pesan</h2>
+    <form [formGroup]="form">
+      <div class="flex flex-col space-y-4">
+        <div class="flex space-x-4">
+          <div class="flex-1">
+            <label class="block mb-1">Nama Lengkap</label>
+            <input matInput formControlName="nama_lengkap" class="border border-gray-300 rounded-md w-full p-2" placeholder="Nama Lengkap" />
+          </div>
+          <div class="flex-1">
+            <label class="block mb-1">Perusahaan/Instansi</label>
+            <input matInput formControlName="perusahaan_instansi" class="border border-gray-300 rounded-md w-full p-2" placeholder="Perusahaan/Instansi" />
+          </div>
+        </div>
+
+        <div class="flex space-x-4">
+          <div class="flex-1">
+            <label class="block mb-1">Email</label>
+            <input matInput formControlName="email" class="border border-gray-300 rounded-md w-full p-2" placeholder="Email" />
+          </div>
+          <div class="flex-1">
+            <label class="block mb-1">No. Hp/Whatsapp</label>
+            <input matInput formControlName="nohp_whatsapp" class="border border-gray-300 rounded-md w-full p-2" placeholder="No. Hp/Whatsapp" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block mb-1">Pilih Produk/Solusi</label>
+          <select formControlName="produk_solusi" class="border border-gray-300 rounded-md w-full p-2">
+            <option value="">Pilih Produk</option>
+            <!-- Tambahkan opsi produk di sini -->
+          </select>
+        </div>
+
+        <div>
+          <label class="block mb-1">Tulis Pesan Anda</label>
+          <textarea matInput formControlName="pesan" class="border border-gray-300 rounded-md w-full p-2" placeholder="Tulis Pesan Anda"></textarea>
+        </div>
+
+        <button mat-button type="submit" class="kirim bg-blue-600 text-white p-2 rounded-md" (click)="onSubmit()">Kirim</button>
+      </div>
+    </form>
+  </div>
+
+
+
+
+        <div class="w-full md:w-3/5 bg-white p-6 shadow-md rounded-lg">
+          <h2 class="text-xl font-medium mb-4">Kontak Kami</h2>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <mat-icon class="text-blue-600 pr-8">location_on</mat-icon>
+              <div class="ml-3">
+                <strong>Kantor Pusat :</strong><br />
+                <div *ngIf="identitasKantorPusat">
+                  <p>{{ identitasKantorPusat.alamat }}</p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <mat-icon class="text-blue-600">location_on</mat-icon>
+              <div class="ml-3">
+                <strong>Supporting kantor :</strong><br />
+                <p>{{ identitasKantorSupporting1?.alamat }}</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <mat-icon class="text-blue-600">location_on</mat-icon>
+              <div class="ml-3">
+                <strong>Supporting kantor :</strong><br />
+                 <p>{{ identitasKantorSupporting2?.alamat }}</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 space-y-4">
+            <div class="flex items-start">
+              <mat-icon class="text-blue-600">phone</mat-icon>
+              <div class="ml-3">
+                <strong>Call</strong><br />
+                <p class="max-w-32">{{ notelpon?.deskripsi }}</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <mat-icon class="text-blue-600">email</mat-icon>
+              <div class="ml-3">
+                <strong>Email</strong><br />
+                <p class="max-w-32">{{ emailkantor?.deskripsi }}</p> 
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <mat-icon class="text-blue-600">phone_iphone</mat-icon>
+              <div class="ml-3">
+                <strong>{{ noperson1?.deskripsi }}</strong><br />
+                {{ emailperson1?.deskripsi }}
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <mat-icon class="text-blue-600">phone_iphone</mat-icon>
+              <div class="ml-3">
+                <strong>{{ noperson2?.deskripsi }}</strong><br />
+                {{ emailperson2?.deskripsi }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

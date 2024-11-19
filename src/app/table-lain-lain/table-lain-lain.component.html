@@ -1,0 +1,61 @@
+
+    <mat-card class="card">
+        <mat-card-content class="content">
+    
+            <h2 class="judul">Lain-Lain</h2>
+    
+            <div class="add-button">
+                <mat-form-field class="search-container" appearance="outline">
+                  <input matInput (keyup)="applyFilter($event)" placeholder="Pencarian">
+                </mat-form-field>
+    
+                <button mat-button class="btn-tambah" style="color: white;"  (click)="openDialog(false)">Tambah</button>
+              
+            </div>
+    
+            <div class="overflow-auto">
+    
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                    <ng-container matColumnDef="no">
+                      <th class="no" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">No</th>
+                      <td class="no" mat-cell *matCellDef="let element">{{element.no}}</td>
+                    </ng-container>
+            
+                    <ng-container matColumnDef="judul">
+                      <th class="namagrub" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">Judul</th>
+                      <td mat-cell *matCellDef="let element">{{element.judul}}</td>
+                    </ng-container>
+            
+                    <ng-container matColumnDef="deskripsi">
+                      <th class="status" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">Deskripsi</th>
+                      <td class="status" mat-cell *matCellDef="let element">{{element.deskripsi}}</td>
+                    </ng-container>
+    
+                 
+                    <ng-container matColumnDef="kategori">
+                        <th class="status" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">Kategori</th>
+                        <td class="status" mat-cell *matCellDef="let element">{{element.kategori}}</td>
+                      </ng-container>
+            
+                    <ng-container matColumnDef="aksi">
+                      <th class="action" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">Aksi</th>
+                      <td mat-cell *matCellDef="let element">
+                        <button mat-icon-button color="primary" class="btn-edit" (click)="openDialog(true, element)"><mat-icon class="edit-button">edit</mat-icon></button>
+                        <button mat-icon-button color="warn" class="btn-delete" (click)="openDeleteDialog(element)" ><mat-icon class="delete-button" >delete</mat-icon></button>
+                      </td>
+                    </ng-container>
+            
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                  </table>
+                  
+                <div class="">
+                  <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+                </div>
+    
+            </div>
+          
+    
+        </mat-card-content>
+    
+    </mat-card>

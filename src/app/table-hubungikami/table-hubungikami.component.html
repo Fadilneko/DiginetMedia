@@ -1,0 +1,75 @@
+<mat-card class="card">
+    <mat-card-content class="content">
+
+        <h2 class="judul">Formulir Pesan</h2>
+
+        <div class="add-button">
+            <mat-form-field class="search-container" appearance="outline">
+                <input matInput (keyup)="applyFilter($event)" placeholder="Pencarian">
+            </mat-form-field>
+
+            <!-- Tombol "Tambah" telah dihilangkan -->
+        </div>
+
+        <div class="overflow-auto">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                <ng-container matColumnDef="no">
+                    <th class="no" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">No</th>
+                    <td class="no" mat-cell *matCellDef="let element">{{element.no}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="nama_lengkap">
+                    <th class="namagrub" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">Nama Lengkap</th>
+                    <td mat-cell *matCellDef="let element">{{element.nama_lengkap}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="perusahaan_instansi">
+                    <th class="status" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">Perusahaan/Instansi</th>
+                    <td class="status" mat-cell *matCellDef="let element">{{element.perusahaan_instansi}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="email">
+                    <th class="status" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">Email</th>
+                    <td class="status" mat-cell *matCellDef="let element">{{element.email}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="nohp_whatsapp">
+                    <th class="status" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">No. Hp/Whatsapp</th>
+                    <td class="status" mat-cell *matCellDef="let element">{{element.nohp_whatsapp}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="produk_solusi">
+                    <th class="status" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">Produk/Solusi</th>
+                    <td class="status" mat-cell *matCellDef="let element">{{element.produk_solusi}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="pesan">
+                    <th class="status" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">Pesan</th>
+                    <td class="status" mat-cell *matCellDef="let element">{{element.pesan}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="aksi">
+                    <th class="action" mat-header-cell *matHeaderCellDef style="background-color: #ebebeb;">Aksi</th>
+                    <td mat-cell *matCellDef="let element">
+                        <!-- Tombol "Edit" telah dihilangkan -->
+
+                        <!-- Tombol "Delete" tetap ada -->
+                        <button mat-icon-button color="warn" class="btn-delete" (click)="openDeleteDialog(element)">
+                            <mat-icon class="delete-button">delete</mat-icon>
+                        </button>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+            <div>
+                <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+            </div>
+
+        </div>
+    </mat-card-content>
+</mat-card>
+ 

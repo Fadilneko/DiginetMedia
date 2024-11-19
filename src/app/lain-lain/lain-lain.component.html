@@ -1,0 +1,67 @@
+        <mat-card class="card shadow-none">
+
+            <div class="hero-section text-left mb-5 py-14 bg-cover bg-center text-white px-8"  style="background-image: url('assets/produk.png');">
+                <div class="p0">
+                <h1>{{ judul?.judul }}</h1> <!-- Mengambil dari field judul -->
+                    <p>{{ judul?.deskripsi }}</p> <!-- Mengambil dari field deskripsi -->
+                </div>
+            </div>
+
+            <mat-card-content class="content">
+
+        <div class="center flex justify-center">
+            
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="garis bg-white h-1 w-1/5   "></div>
+                    <h2>{{ training?.judul }}</h2> <!-- Mengambil dari field judul -->
+                    <p>{{ training?.deskripsi}}</p> <!-- Mengambil dari field deskripsi -->
+                    <button mat-button [routerLink]="['/training']" class="btn">Selengkapnya</button>
+                </div>
+                <div class="grid-item">
+                    <div class="garis bg-white h-1 w-1/5   "></div>
+                    <h2>{{ hubungikami?.judul }}</h2> <!-- Mengambil dari field judul -->
+                    <p>{{ hubungikami?.deskripsi}}</p> <!-- Mengambil dari field deskripsi -->
+                    <button mat-button [routerLink]="['/hubungi-kami']" class="btn">Selengkapnya</button>
+                </div>
+                <div class="grid-item">
+                    <div class="garis bg-white h-1 w-1/5"></div>
+                    <h2>{{ technology?.judul }}</h2> <!-- Mengambil dari field judul kategori Technology -->
+                    <p>{{ technology?.deskripsi }}</p> <!-- Mengambil dari field deskripsi kategori Technology -->
+                    <button mat-button [routerLink]="['/teknologi']" class="btn">Selengkapnya</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="center flex justify-center">
+
+            <div class="display0">
+
+                <div class="p1">
+                    <h1>{{ demo?.judul }}</h1> <!-- Mengambil dari field judul kategori Demo -->
+                    <p>{{ demo?.deskripsi }}</p> <!-- Mengambil dari field deskripsi kategori Demo -->
+                    <button mat-button [routerLink]="['/hubungi-kami']" class="btn-hubungi">Hubungi Kami</button>
+                </div>
+                
+                <div class="p1">
+                    <h1>{{ artikel?.judul }}</h1> <!-- Mengambil dari field judul kategori Artikel -->
+                    <p>{{ artikel?.deskripsi }}</p> <!-- Mengambil dari field deskripsi kategori Artikel -->
+                    <button mat-button [routerLink]="['/blog']" class="btn-hubungi">Selengkapnya</button>
+                </div>
+                
+
+              
+
+                </div>
+
+
+            </div>
+
+  
+
+        </mat-card-content>
+            
+        </mat-card>
+
+
